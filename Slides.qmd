@@ -1,0 +1,100 @@
+---
+title: "Fundamentals of Missing Data in Evaluation"
+subtitle: "Presentation to MSU Department of Psychology, Program Evaluation
+           Brown Bag Series, East Lansing, MI"
+author: "Steven J. Pierce"
+institute: "Center for Statistical Training and Consulting"
+date: December 5, 2024
+title-slide-attributes: 
+  data-notes: My talk today focuses on the fundamental issues in handling 
+    missing data in evaluation projects. 
+csl: apa-numeric-superscript-brackets.csl
+bibliography: references.bib
+format: 
+  revealjs:
+    embed-resources: true
+    theme: [default, CSTAT_theme.scss]
+    controls: true
+    slide-number: c/t
+    show-notes: false
+    header-logo: graphics/Combomark-Horiz_Green-RGB.png
+    footer: <a href="https://github.com/sjpierce/FMDE2024">https://github.com/sjpierce/FMDE2024</a>
+    logo: graphics/CSTAT_5x5_Transparent.png
+    link-external-icon: true
+    link-external-newwindow: true
+filters:
+  - reveal-header
+---
+
+```{r}
+#| label: load-packages
+#| include: false
+
+library(tidyverse)
+library(knitr)
+library(kableExtra) # Functions for formatting nice tables. 
+```
+
+## Outline
+* Ethics
+* Problem
+* Consequences
+* Diagnosis
+* Treatment
+* Advice
+
+## Ethics: Guiding Principles for Evaluators
+Handling missing data well enacts our guiding principles [@AEA-RN8648]: 
+
+:::: {.columns}
+
+::: {.column width="25%"}
+![](graphics/AEA_Logo.png){fig-alt="AEA logo." width=150% height=150%}
+:::
+
+::: {.column width="75%"}
+
+::: {.incremental}
+* Systematic inquiry
+* Competence 
+* Integrity 
+:::
+
+:::
+
+::::
+
+::: {.notes}
+Thoughtful handling of missing data is a good way to enact several of AEA's 
+guiding principles for evaluators, namely systematic inquiry, competence, and 
+integrity.
+:::
+
+# Problem
+
+## Types of Missingness
+
+* Item-level 
+* Construct 
+* Person-period 
+
+# Consequences
+
+# Diagnosis
+
+## Describing the Amount of MD
+
+# Treatment
+
+# Advice
+
+## Practical Options
+
+* Item-level missingness in scale scores [@Graham-RN1615; @Newman-RN8223]
+
+
+## References {.scrollable}
+
+::: {#refs}
+:::
+
