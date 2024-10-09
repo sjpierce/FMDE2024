@@ -36,11 +36,12 @@ library(kableExtra) # Functions for formatting nice tables.
 ```
 
 ## Outline
-* Ethics
 * Problem
+* Ethics
 * Consequences
 * Diagnosis
 * Treatment
+* Prevention
 * Advice
 
 ## Ethics: Guiding Principles for Evaluators
