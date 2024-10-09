@@ -44,6 +44,23 @@ library(kableExtra) # Functions for formatting nice tables.
 * Prevention
 * Advice
 
+# Problem
+Missing data (MD) is a common issue afflicting research and evaluation studies. 
+
+::: {.fragment}
+:::{.callout-warning}
+If you do much evaluation work, you *will* run into missing data. 
+:::
+:::
+::: {.notes}
+Missing data (MD) is a common issue afflicting research and evaluation studies.
+It can be a result of poor study implementation, participant choices, equipment
+failure, and many other circumstances. Entirely avoiding it is difficult and
+rare. **>** If you do much evaluation work, you *will* eventually run into some 
+missing data issues. Therefore, it is worth learning about the issue and how to
+handle it.
+::: 
+
 ## Ethics: Guiding Principles for Evaluators
 Handling missing data well enacts our guiding principles [@AEA-RN8648]: 
 
