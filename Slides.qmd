@@ -150,6 +150,10 @@ missing values on the variables involved in an analysis. That reduces statistica
 
 ## Describing the Amount of MD
 
+* Numbers & percentages of complete & incomplete cases 
+* Number and percentage of missing values for each variable
+* Nature and frequency of missing data patterns
+
 # Treatment
 
 # Advice
