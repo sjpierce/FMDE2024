@@ -172,6 +172,8 @@ An ounce of prevention is better than a pound of cure
 
 # Advice
 
+* Collaborate with a statistician! 
+
 ## Practical Options
 
 * Item-level missingness in scale scores [@Graham-RN1615; @Newman-RN8223]
