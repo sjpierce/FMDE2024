@@ -111,8 +111,6 @@ guiding principles for evaluators, namely systematic inquiry, competence, and
 integrity.
 :::
 
-# Problem
-
 ## Types of Missingness
 
 * Item-level 
