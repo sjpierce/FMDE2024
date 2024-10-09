@@ -116,6 +116,8 @@ integrity.
 * Item-level 
 * Construct 
 * Person-period 
+* Planned vs unplanned
+
 
 # Consequences
 
