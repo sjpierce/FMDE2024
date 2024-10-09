@@ -118,6 +118,18 @@ integrity.
 * Person-period 
 * Planned vs unplanned
 
+## Mechanisms of Missingness
+
+* Missing completely at random (MCAR)
+* Missing at random (MAR)
+* Missing not at random (MNAR)
+
+## MCAR
+MCAR is when neither observed nor unobserved variables predict which data is missing
+
+## MAR
+
+## MNAR
 
 # Consequences
 
