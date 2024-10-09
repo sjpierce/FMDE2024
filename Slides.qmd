@@ -154,6 +154,14 @@ missing values on the variables involved in an analysis. That reduces statistica
 * Number and percentage of missing values for each variable
 * Nature and frequency of missing data patterns
 
+## Predictors of Attrition & Missingness in Longitudinal Studies
+
+* Study arm: Compare retention rates 
+* Study site (in multisite studies)
+* Baseline/pretest values of outcome variables may predict who drops out or has 
+  missing values
+* Other covariates (demographics, site, )
+
 # Treatment
 
 # Advice
