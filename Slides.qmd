@@ -164,6 +164,12 @@ missing values on the variables involved in an analysis. That reduces statistica
 
 # Treatment
 
+# Prevention
+
+An ounce of prevention is better than a pound of cure
+
+@Wisniewski-RN2978
+
 # Advice
 
 ## Practical Options
