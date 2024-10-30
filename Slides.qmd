@@ -1,7 +1,7 @@
 ---
 title: "Fundamentals of Missing Data in Evaluation"
 subtitle: "Presentation to MSU Department of Psychology, Program Evaluation
-           Brown Bag Series, East Lansing, MI"
+           Occasional Speaker Series, East Lansing, MI"
 author: "Steven J. Pierce"
 institute: "Center for Statistical Training and Consulting"
 date: December 5, 2024
