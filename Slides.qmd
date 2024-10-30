@@ -36,12 +36,53 @@ library(kableExtra) # Functions for formatting nice tables.
 ```
 
 ## Outline
-* Ethics
 * Problem
+* Ethics
 * Consequences
 * Diagnosis
 * Treatment
+* Prevention
 * Advice
+
+# Problem
+Missing data (MD) is a common issue afflicting research and evaluation studies. 
+
+::: {.fragment}
+:::{.callout-warning}
+If you do much evaluation work, you *will* run into missing data. 
+:::
+:::
+::: {.notes}
+Missing data (MD) is a common issue afflicting research and evaluation studies.
+It can be a result of poor study implementation, participant choices, equipment
+failure, and many other circumstances. Entirely avoiding it is difficult and
+rare. **>** If you do much evaluation work, you *will* eventually run into some 
+missing data issues. Therefore, it is worth learning about the issue and how to
+handle it.
+::: 
+
+## What is Missing Data?
+
+Any measurement you intended to obtain, but did not get. 
+
+* Skipped items, instruments, visits, ...
+* Illegible or irrelevant responses
+* Refusal to answer
+* Don't know
+* Lost records 
+* Study dropout 
+
+::: {.notes}
+In the simplest terms, missing data is simply a measurement that you intended to 
+obtain but did not get. Perhaps your survey asked a particular question, but the  
+participant skipped that item without recording any response. Or maybe they 
+responded but the answer was illegible, or they explicitly refused to answer the 
+question, or simply said "I don't know". Those are all examples of how a 
+measurement you wanted to collect may not be obtained. 
+
+While you can sometimes categorize what kind of missing data you have or why it 
+is missing, the basic problem is that you didn't get all the data you need. 
+:::
 
 ## Ethics: Guiding Principles for Evaluators
 Handling missing data well enacts our guiding principles [@AEA-RN8648]: 
@@ -70,15 +111,40 @@ guiding principles for evaluators, namely systematic inquiry, competence, and
 integrity.
 :::
 
-# Problem
-
 ## Types of Missingness
 
 * Item-level 
 * Construct 
 * Person-period 
+* Planned vs unplanned
+
+## Mechanisms of Missingness
+
+* Missing completely at random (MCAR)
+* Missing at random (MAR)
+* Missing not at random (MNAR)
+
+## MCAR
+MCAR is when neither observed nor unobserved variables predict which data is missing
+
+## MAR
+
+## MNAR
 
 # Consequences
+What are the consequences of missing data? 
+
+## Bias
+In appropriate handling of missing data can cause analyses to yield biased 
+results. 
+
+## Generalizability
+Misalignment of analyzed sample and intended population
+
+## Power
+Most statistical software defaults to listwise deletion of cases that have any 
+missing values on the variables involved in an analysis. That reduces statistical
+
 
 [@Fernández-García-RN4151; McKnight-RN1296]
 
@@ -88,9 +154,29 @@ integrity.
 
 [McKnight-RN1296]
 
+* Numbers & percentages of complete & incomplete cases 
+* Number and percentage of missing values for each variable
+* Nature and frequency of missing data patterns
+
+## Predictors of Attrition & Missingness in Longitudinal Studies
+
+* Study arm: Compare retention rates 
+* Study site (in multisite studies)
+* Baseline/pretest values of outcome variables may predict who drops out or has 
+  missing values
+* Other covariates (demographics, site, )
+
 # Treatment
 
+# Prevention
+
+An ounce of prevention is better than a pound of cure
+
+@Wisniewski-RN2978
+
 # Advice
+
+* Collaborate with a statistician! 
 
 ## Practical Options
 
