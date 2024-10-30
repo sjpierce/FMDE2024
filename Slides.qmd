@@ -80,9 +80,13 @@ integrity.
 
 # Consequences
 
+[@Fernández-García-RN4151; McKnight-RN1296]
+
 # Diagnosis
 
 ## Describing the Amount of MD
+
+[McKnight-RN1296]
 
 # Treatment
 
