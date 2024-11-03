@@ -188,13 +188,13 @@ Most statistical software defaults to listwise deletion of cases that have any
 missing values on the variables involved in an analysis. That reduces statistical
 
 
-[@Fernández-García-RN4151; McKnight-RN1296]
+[@Fernández-García-RN4151; @McKnight-RN1296]
 
 # Diagnosis
 
 ## Describing the Amount of MD
 
-[McKnight-RN1296]
+[@McKnight-RN1296]
 
 * Numbers & percentages of complete & incomplete cases 
 * Number and percentage of missing values for each variable
@@ -214,7 +214,7 @@ missing values on the variables involved in an analysis. That reduces statistica
 
 An ounce of prevention is better than a pound of cure
 
-@Wisniewski-RN2978
+@de-Leeuw-RN8682, @Wisniewski-RN2978
 
 # Advice
 
