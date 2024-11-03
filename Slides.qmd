@@ -2,7 +2,10 @@
 title: "Fundamentals of Missing Data in Evaluation"
 subtitle: "Presentation to MSU Department of Psychology, Program Evaluation
            Occasional Speaker Series, East Lansing, MI"
-author: "Steven J. Pierce"
+author: 
+  - name: Steven J. Pierce
+    orcid: 0000-0002-0679-3019
+    email: pierces1@msu.edu
 institute: "Center for Statistical Training and Consulting"
 date: December 5, 2024
 title-slide-attributes: 
