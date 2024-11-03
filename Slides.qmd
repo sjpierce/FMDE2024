@@ -9,8 +9,16 @@ author:
 institute: "Center for Statistical Training and Consulting"
 date: December 5, 2024
 title-slide-attributes: 
-  data-notes: My talk today focuses on the fundamental issues in handling 
-    missing data in evaluation projects. 
+  data-notes: "1 hr (45-50 min talk + 10-15 min Q & A) My talk today focuses on 
+  some concepts and issues related to missing data in program evaluation 
+  contexts. My expertise lies in applied statistics, so I'll focus on aspects of 
+  missing data relevant to quantitative methods and statistical analyses. Even 
+  still, missing data is a big topic and this is just a short talk, so my goal 
+  is to teach some fundamental ideas, share some insights and practical advice, 
+  then offer resources you can use to learn more on your own. Jot down either my 
+  email address or the link you see at the bottom of the screen. My slides, 
+  complete with speaker notes, reference list, and links to resources, will be 
+  available from that link."
 csl: apa-numeric-superscript-brackets.csl
 bibliography: references.bib
 format: 
