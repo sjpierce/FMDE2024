@@ -97,6 +97,26 @@ measurement you wanted to collect may not be obtained. Other examples might be
 results of finding losing some records, or people dropping out of a study.
 :::
 
+# What are the problems with missing data? 
+
+::: {.notes}
+
+::: 
+
+## Definition
+
+
+
+
+::: {.notes}
+Like many things in life, data collection doesn't always 
+go according to plan. 
+
+Perhaps your survey participant skipped a question without recording any 
+response. Or maybe they wrote an illegible answer, explicitly refused to answer 
+the question, or simply said "I don't know". Those are all examples of how a 
+measurement you wanted to collect may not be obtained. Other examples might be results of finding losing some 
+records, or people dropping out of a study. 
 
 While you can sometimes categorize what kind of missing data you have or why it 
 is missing, the basic problem is that you didn't get all the data you need. 
