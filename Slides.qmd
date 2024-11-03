@@ -78,7 +78,8 @@ missing data issues. Therefore, it is worth learning about the issue and how to
 handle it.
 :::
 
-Any measurement you intended to obtain, but did not get. 
+# Why do we end up with missing data? 
+Data collection doesn't always go according to plan...
 
 * Skipped items, instruments, visits, ...
 * Illegible or irrelevant responses
@@ -88,12 +89,14 @@ Any measurement you intended to obtain, but did not get.
 * Study dropout 
 
 ::: {.notes}
-In the simplest terms, missing data is simply a measurement that you intended to 
-obtain but did not get. Perhaps your survey asked a particular question, but the  
-participant skipped that item without recording any response. Or maybe they 
-responded but the answer was illegible, or they explicitly refused to answer the 
-question, or simply said "I don't know". Those are all examples of how a 
-measurement you wanted to collect may not be obtained. 
+Like many things in life, data collection doesn't always go according to plan.
+Perhaps your survey participant skipped a question without recording any
+response. Or maybe they wrote an illegible answer, explicitly refused to answer
+the question, or simply said "I don't know". Those are all examples of how a
+measurement you wanted to collect may not be obtained. Other examples might be
+results of finding losing some records, or people dropping out of a study.
+:::
+
 
 While you can sometimes categorize what kind of missing data you have or why it 
 is missing, the basic problem is that you didn't get all the data you need. 
