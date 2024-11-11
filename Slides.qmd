@@ -119,13 +119,6 @@ events, consider the recent hurricanes in Florida that disrupted data collection
 for one of my projects.
 :::
 
-# What are the problems with missing data? 
-
-::: {.notes}
-
-::: 
-
-
 
 # Why should we care about missing data? 
 
