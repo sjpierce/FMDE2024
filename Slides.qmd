@@ -151,19 +151,22 @@ Handling missing data well enacts our guiding principles [@AEA-RN8648]:
 ::::
 
 ::: {.notes}
-Thoughtful handling of missing data is a good way to enact several of AEA's 
-guiding principles for evaluators. 
+Perhaps the broadest answer to why we should care about missing data is that 
+this is an ethics issue. Thoughtful handling of missing data is a good way to 
+enact several of AEA's guiding principles for evaluators. 
 
 * **>** *Systematic inquiry* demands that we examine the quality of the 
   available data and use it appropriately. We have an obligation to use sound 
   methodology. There are scientific consequences of missing data but there are 
   also legitimate, evidence-based methods for minimizing its impact on our 
   analyses, conclusions, and products. 
-* **>** Because poorly handling missing data may compromise our evaluations, 
-  *competence* demands that we invest in the skills necessary to understand 
-  and handle missing data properly.
+* **>** *Competence* demands that we invest in skills necessary to understand 
+  and handle missing data properly because doing it poorly may compromise our 
+  evaluations. Our funders, clients, and stakeholders--including the program 
+  staff and the people and communities they serve and operate within--need and 
+  deserve competent evaluation services. 
 * **>** *Integrity* demands that we be transparent about the amount of missing 
-  data, how we handled it, and how it may affect our evaluation results.
+  data, how we handled it, and how it may affect our evaluation results. 
 :::
 
 ## Types of Missingness
