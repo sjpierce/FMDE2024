@@ -169,6 +169,27 @@ enact several of AEA's guiding principles for evaluators.
   data, how we handled it, and how it may affect our evaluation results. 
 :::
 
+## Consequences  
+
+::: {.notes}
+
+::: 
+
+## Bias
+In appropriate handling of missing data can cause analyses to yield biased 
+results. 
+
+## Generalizability
+Misalignment of analyzed sample and intended population
+
+## Power
+Most statistical software defaults to listwise deletion of cases that have any 
+missing values on the variables involved in an analysis. That reduces statistical
+
+
+[@Fernández-García-RN4151; @McKnight-RN1296]
+
+
 ## Types of Missingness
 
 * Item-level 
@@ -189,22 +210,7 @@ MCAR is when neither observed nor unobserved variables predict which data is mis
 
 ## MNAR
 
-# Consequences
-What are the consequences of missing data? 
 
-## Bias
-In appropriate handling of missing data can cause analyses to yield biased 
-results. 
-
-## Generalizability
-Misalignment of analyzed sample and intended population
-
-## Power
-Most statistical software defaults to listwise deletion of cases that have any 
-missing values on the variables involved in an analysis. That reduces statistical
-
-
-[@Fernández-García-RN4151; @McKnight-RN1296]
 
 # Diagnosis
 
