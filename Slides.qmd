@@ -49,14 +49,15 @@ library(kableExtra) # Functions for formatting nice tables.
 ## Outline
 * What is missing data? 
 * Why do we end up with missing data? 
-* What are the problems with missing data? 
-* Why do we care? 
-    * Ethics
-    * Consequences    
-* What should we do about it?
+* Why do we care about missing data? 
+* Describing missing data
+    * Mechanisms
+    * Amount
+    * Patterns
+* What should we do about missing data?
+    * Prevention
     * Diagnosis
     * Treatment
-    * Prevention
 * Advice
 
 # What is missing data?
