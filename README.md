@@ -18,16 +18,13 @@ This repository holds materials for one of my professional presentations
 (Pierce, 2024, December 5). Its primary purpose is for me to use version
 control tools while developing my slides, but its secondary purposes
 include distributing the slides to my audience and demonstrating how to
-use Quarto to create slides. I plan to make the repository public after
-delivering the presentation.
-
-## Assumptions
+use Quarto to create slides. The repository is public so that attendees
+can access the slides after the presentation.
 
 There are two different types of users of this repository: myself and my
-audience. I assume most of my audience just wants [the final
-slides](https://github.com/sjpierce/FMDE2024/Slides.html), but some may
-want to see exactly how they were created by examining other parts of
-the repository.
+audience. I assume most of my audience just wants copies of my slides,
+but some may want to see exactly how they were created by examining
+other parts of the repository (especially the Quarto scripts).
 
 Since there are no other contributors, I am omitting details that may
 otherwise be useful to collaborators. However, here is a link to my web
@@ -36,6 +33,33 @@ R](https://sjpierce.github.io/rr_software.html). This presentation uses
 the Quarto extension called `reveal-header`
 (https://github.com/shafayetShafee/reveal-header). Installing that
 created the `_extensions/` subfolder here.
+
+## Obtaining the Slides & Example Files
+
+For each of the links below, you will land on a GitHub page that has a
+*Download raw file* button in the upper right corner of the screen. Its
+icon looks like an arrow pointing down into a tray. It is just to the
+left of the pencil icon. Use that to download each file to your
+computer.
+
+The `*.qmd` files are Quarto scripts, while the corresponding `*.html`
+files are the resulting rendered output. The output should work in
+common web browsers like Chrome, Edge, and Firefox.
+
+- [`Slides.qmd`](https://github.com/sjpierce/FMDE2024/blob/main/Slides.qmd)  
+- [`Slides.html`](https://github.com/sjpierce/FMDE2024/blob/main/Slides.html)
+  *If you just want a copy of the final slides, this is it!*
+
+## Usage Tips
+
+- After you open the `Slides.html` file on your computer, press the `s`
+  key on your keyboard to see the speaker view that contains my speaker
+  notes.
+- There are also other [slide navigation keyboard
+  shortcuts](https://quarto.org/docs/presentations/revealjs/presenting.html).
+- Try opening both a Quarto script and the output it generates and look
+  at them side-by-side. For more intensive examination of how things
+  work, see the Rendering the Scripts section below.
 
 ## Repository Structure and Contents
 
@@ -98,14 +122,25 @@ project](https://support.rstudio.com/hc/en-us/articles/200526207-Using-RStudio-P
 
 ## Rendering The Slides
 
-To render my presentation slides from the source code:
+This section is for users who want to do more than just casually examine
+the slides and example files side by side. The best way to learn is to
+actually install all the software and then try rendering some files
+yourself. To render either my presentation slides or my other example
+Quarto scripts from the source code:
 
+- Install the necessary [software for reproducible research with
+  R](https://sjpierce.github.io/rr_software.html)
+- Download or clone the repository to your computer (preferably using
+  Git).
 - Double-click the `FMDE2024.Rproj` file from Windows Explorer to open
   the RStudio project.
-- Use RStudio to open the file `Slides.qmd`.
-- Click the *Render* button in RStudio.
+- Use RStudio to open the relevant Quarto script file (e.g.,
+  `Slides.qmd`).
+- Click the *Render* button in RStudio source editor pane.
 
-That will generate the `Slides.html` file containing the final slides.
+That will generate the output file (e.g., `Slides.html`) and overwrite
+any prior version of it that exists in your local copy of the
+repository.
 
 ## References
 
@@ -115,9 +150,10 @@ entry-spacing="0" line-spacing="2">
 <div id="ref-Pierce-RN8663" class="csl-entry">
 
 Pierce, S. J. (2024, December 5). *Fundamentals of missing data in
-evaluation* \[Invited oral presentation\]. Program Evaluation Brown Bag
-Series hosted by Michigan State University Department of Psychology,
-East Lansing, MI, United States. <https://github.com/sjpierce/FMDE2024>
+evaluation* \[Invited oral presentation\]. Program Evaluation Occasional
+Speaker Series hosted by Michigan State University Department of
+Psychology, East Lansing, MI, United States.
+<https://github.com/sjpierce/FMDE2024>
 
 </div>
 
@@ -126,3 +162,23 @@ East Lansing, MI, United States. <https://github.com/sjpierce/FMDE2024>
 ## Citing This Repository
 
 Please cite my actual presentation (Pierce, 2024, December 5).
+
+## License
+
+This work is licensed under [CC BY-NC-SA
+4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1).
+To view a copy of this license, visit
+<https://creativecommons.org/licenses/by-nc-sa/4.0/>
+
+The following exceptions apply:
+
+- Graphics files for the Michigan State University (MSU) wordmark and
+  the logos for the Center for Statistical Training and Consulting
+  (CSTAT) do not fall under the CC BY-NC-SA license. They are
+  intellectual property owned by Michigan State University. I use them
+  for branding purposes because I am an MSU employee.
+- Similarly, I assume that graphics file for the logos of the American
+  Evaluation Association (AEA)is the intellectual property of that
+  organization and also does not fall under the CC BY-NC-SA license. My
+  use of it in this repository should fall under fair use provisions of
+  trademark law.
