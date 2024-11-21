@@ -163,7 +163,7 @@ missing data. But why should we care about it? That's a crucial question and
 I'll answer it. 
 :::
 
-## Ethics: Guiding Principles for Evaluators
+## Ethics for Evaluators
 Handling missing data well enacts our guiding principles [@AEA-RN8648]: 
 
 :::: {.columns}
