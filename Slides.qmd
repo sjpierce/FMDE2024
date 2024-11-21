@@ -49,7 +49,7 @@ library(kableExtra) # Functions for formatting nice tables.
 ## Outline
 * What is missing data? 
 * Why do we end up with missing data? 
-* Why do we care about missing data? 
+* Why should we care about missing data? 
 * Describing missing data
     * Mechanisms
     * Amount
