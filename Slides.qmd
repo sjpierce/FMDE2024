@@ -124,6 +124,36 @@ events, consider the recent hurricanes in Florida that disrupted data collection
 for one of my projects.
 :::
 
+# Missing Data & Project Lifecycle
+
+```{dot}
+//| fig-width: 9
+//| fig-height: 6
+digraph WhenMD {
+rankdir="TB";
+
+node [shape = "box", style= "filled", fontname="Lato", fillcolor = "#C3FFEC"]
+Plan [label = "Study Planning & Design"]
+Collect [label = "Data Collection"]
+Enter [label = "Data Entry"]
+Manage [label = "Data Storage & Management"]
+Analyze [label = "Data Analysis"]
+Plan -> Collect -> Enter -> Manage -> Analyze
+}
+```
+
+::: {.notes}
+Missing data result from events at various points in a project's lifecycle and 
+that may affect your options to handle the problem. At the planning stage, one 
+could leave out an item by accident while designing an instrument. Most missing 
+data is probably a result of things happening during data collection events, 
+but there are some post-data collection things that can happen too. Suppose you 
+have staff entering data from paper forms into electronic files: simple data 
+entry errors can introduce missing data at that stage. Similarly, at the data 
+storage and management stage before analyses begin, someone might make a mistake 
+while working with a data file or a computer hard drive might fail. Vigilance is
+warranted throughout the project lifecycle. 
+:::
 
 # Why should we care about missing data? 
 
