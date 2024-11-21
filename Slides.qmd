@@ -229,22 +229,111 @@ our results.
 Let's explore each of those ideas in more detail.
 :::
 
-::: 
+## Consequences for Measurement [@McKnight-RN1296]
 
-## Bias
-In appropriate handling of missing data can cause analyses to yield biased 
-results. 
+* Availability of constructs 
+* Decreased reliability due to increased error variance
+* Bias from poor content coverage
+* Construct validity
 
-## Generalizability
-Misalignment of analyzed sample and intended population
+::: {.notes}
+Missing data can affect the availability of a construct for your analyses. 
+The extreme case would be a construct measured by a single variable.
+If that's missing, then the entire construct is missing for that individual 
+and it may be very difficult to recover that information. Missing data is still 
+a problem when we use multiple indicators to measure a construct, though perhaps 
+less severe, and it may depend on how you combine items to create the score. 
 
-## Power
-Most statistical software defaults to listwise deletion of cases that have any 
-missing values on the variables involved in an analysis. That reduces statistical
+Missing data decreases the reliability and construct validity of our measures. 
+Internal consistency reliability decreases because missing data increases the 
+error variance in a measure. You may recall that reliability is a function of 
+how many items are used, so fewer observed items leads to lower reliability. 
 
+Further, some items may be more important indicators of a construct than others.
+You may get a biased estimate of the construct due to poorer content coverage if 
+they are missing. Construct validity depends on both reliability and content 
+coverage, so missing data is a threat to validity.
+:::
 
-[@Fernández-García-RN4151; @McKnight-RN1296]
+## Consequences for Internal Validity [@Fernández-García-RN4151; @McKnight-RN1296]
 
+* Selection bias
+* Compromised randomization
+* Power and precision 
+* Inaccurate model assumptions
+
+::: {.notes}
+Missing data is a threat to a study's internal validity for several reasons. 
+Selection bias can result from systematic differences between subgroups of
+participants on constructs relevant to the study conclusions. For example, those
+subgroups could be treatment versus control groups, people who complete the
+study versus drop out, or those who have complete data versus incomplete data.
+These differences may manifest with respect to demographic variables,
+covariates, focal predictors, mediators, moderators, or outcomes. Imagine
+evaluating a longitudinal health study where people who start out with worst 
+symptoms drop out before the posttest more often than those with mild symptoms. 
+Dropping out leads to missing data at posttest. If we fail to handle that 
+properly in the analysis, we may draw inaccurate conclusions about the 
+longitudinal trend in outcome scores. Or perhaps the retention rates differ 
+between treatment and control groups in that same study. Selection bias from 
+such differences reduce the sample representativeness and become rival 
+explanations for findings, making them a threat to internal validity. 
+
+We use randomization to make groups equivalent on measured and unmeasured 
+confounding variables as a way to strengthen validity. That works best in large 
+samples. However, missing data can compromise that effect of randomization by 
+reducing sample size. It can also reduce randomization's ability to achieve 
+equivalence between groups on confounding variables when data are missing 
+differentially across the groups. That reduces internal validity. 
+
+Most statistical software defaults to listwise deletion of cases that have any
+missing values on the variables involved in an analysis. Reducing the sample 
+size will always reduce both power to detect effects and the precision of 
+effect size estimates. In addition to reducing overall sample size, missing data 
+may lead to more unbalanced sample sizes between groups in a study, which also 
+reduces statistical power in many models. 
+
+Finally, missing data can change the distributions of variables in ways that 
+invalidate the assumptions of various statistical models. Some models are more 
+robust than others, but making inaccurate modeling assumptions risks running 
+analyses that will yield misleading conclusions. That's another threat to 
+internal validity. 
+:::
+
+## Consequences for Generalizability [@Fernández-García-RN4151; @McKnight-RN1296]
+
+A representative samples is crucial to generalizing to the intended population!
+
+* Theory development & cumulative knowledge
+* Policy & decision-making
+
+::: {.notes}
+We draw samples to study populations when it isn't feasible to collect the data
+we want from the entire population. The key to getting inferences that properly
+generalize from a sample to the intended population is getting a representative
+sample. Biases creep into our findings when we our samples aren't
+representative. Missing data can introduce systematic biases into our samples.
+Suppose you're studying a behavior that's illegal or stigmatized in some way.
+Some people who engage in it may be relucant to provide all the data you want.
+If we ignore the missing data problem, listwise deletion will result in
+analyzing the subset of the intended population that's willing to answer our
+questions. That in effect changes the population to which we could legitimately
+generalize our findings from "people who engage in behavior x" to "people who
+engage in behavior x and provided complete data". Many people fail to attend to 
+that though and assume their results still appply to the intended population.
+
+That has consequences for developing and testing scientific theories and 
+accumulating knowledge across studies. An example is the effect of publication 
+bias, also called the file drawer problem, on meta-analyses. We know that 
+studies with non-significant findings are less likely to get published. That 
+means the published literature has a missing data problem that can seriously 
+distort the results of meta-analyses that aim to summarize results of a 
+collection of published papers. 
+
+Finally, the big picture here is that when missing data impair generalizability, 
+we may be using inaccurate or misleading findings to inform public policy and 
+important decisions.
+:::
 
 ## Types of Missingness
 
