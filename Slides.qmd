@@ -349,12 +349,16 @@ important decisions.
 * Missing not at random (MNAR)
 
 ## MCAR
-MCAR is when neither observed nor unobserved variables predict which data is missing
+MCAR is when neither observed nor unobserved variables predict which data is 
+missing. 
+
+
 
 ## MAR
+MAR is when observed values predict which data is missing.
 
 ## MNAR
-
+MNAR is when unobserved values predict which values are missing. 
 
 
 # Diagnosis
