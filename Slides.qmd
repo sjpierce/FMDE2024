@@ -203,9 +203,31 @@ enact several of AEA's guiding principles for evaluators.
   data, how we handled it, and how it may affect our evaluation results. 
 :::
 
-## Consequences  
+## Scientific Activities [@McKnight-RN1296]
+There are 3 major scientific activities that can be affected by missing data.
+
+::: {.incremental}
+* Making structured observations of constructs.
+* Using observations to draw inferences about relationships between constructs.
+* Generalizing the results to populations beyond the collected sample.
+::: 
 
 ::: {.notes}
+Broadly speaking, scientific work consists of three major activities, each of
+which has associated methodology concerns. 
+
+* **>** First, we put effort into making structured observations of constructs. 
+We have to be concerned about how missing data affects measurement of the 
+constructs we want to study. 
+* **>** Second, we use those observations to draw inferences about relationships 
+between constructs. Here, we have to consider how missing data could affect the 
+internal validity of our inferences. 
+* **>** Finally, we often want to generalize our results to a broader population 
+than the sample we collected. Missing data can affect the generalizability of 
+our results. 
+
+Let's explore each of those ideas in more detail.
+:::
 
 ::: 
 
