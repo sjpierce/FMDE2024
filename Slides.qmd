@@ -61,7 +61,8 @@ library(kableExtra) # Functions for formatting nice tables.
 * Advice
 
 # What is missing data?
-Missing data (MD) are measurements you intended to collect but did not get. 
+Missing data (MD) are measurements you want or intended to collect but did not 
+get. [@Fernández-García-RN4151]
 
 ::: {.incremental}
 * Having MD is *common* in research & evaluation studies.
