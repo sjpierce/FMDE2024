@@ -308,16 +308,16 @@ A representative sample is crucial to generalizing to the intended population!
 We draw samples to study populations when it isn't feasible to collect the data
 we want from the entire population. The key to getting inferences that properly
 generalize from a sample to the intended population is getting a representative
-sample. Biases creep into our findings when we our samples aren't
-representative. Missing data can introduce systematic biases into our samples.
-Suppose you're studying a behavior that's illegal or stigmatized in some way.
-Some people who engage in it may be relucant to provide all the data you want.
-If we ignore the missing data problem, listwise deletion will result in
-analyzing the subset of the intended population that's willing to answer our
-questions. That in effect changes the population to which we could legitimately
-generalize our findings from "people who engage in behavior x" to "people who
-engage in behavior x and provided complete data". Many people fail to attend to 
-that though and assume their results still appply to the intended population.
+sample. Biases creep into findings when we use non-representative samples.
+Missing data can introduce systematic biases into our samples. Suppose you're
+studying a behavior that's illegal or stigmatized in some way. Some people who
+engage in it may be reluctant to provide all the data you want. If we ignore the
+missing data problem, listwise deletion will result in analyzing the subset of
+the intended population that's willing to answer our questions. That in effect
+changes the population to which we could legitimately generalize our findings
+from "people who engage in behavior x" to "people who engage in behavior x and
+provided complete data". Many people fail to attend to that though and assume
+their results still apply to the original intended population.
 
 That has consequences for developing and testing scientific theories and 
 accumulating knowledge across studies. An example is the effect of publication 
