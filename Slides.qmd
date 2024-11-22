@@ -44,6 +44,7 @@ filters:
 library(tidyverse)
 library(knitr)
 library(kableExtra) # Functions for formatting nice tables. 
+library(rgl)        # for cube3d()
 ```
 
 ## Outline
@@ -345,10 +346,51 @@ it. I'm going to cover some concepts that pertain to describing the mechanisms,
 amounts, and patterns of missing data. 
 :::
 
-## Cattell's data box
+## Cattell's Data Box [@Cattell-RN8693] {.smaller}
 
+:::: {.columns}
 
+::: {.column width="50%"}
 
+``` {r}
+#| label: data-box
+#| message: false
+#| fig-width: 5
+#| fig-height: 5
+
+options(rgl.useNULL=TRUE)
+open3d(silent = TRUE)
+cube3d(scaleMatrix(5,5,5), col = "#C3FFEC", quads = 5) %>% 
+  translate3d(1, 1, 1) %>% 
+  shade3d()
+
+axis3d(edge = 'x--', labels = c("1", "2", ".", ".", ".", "V"))
+mtext3d(text = "Variable", edge = 'x++', line = 4, floating = TRUE)
+
+axis3d(edge = 'y-+', labels = c("1", "2", ".", ".", ".", "T"))
+mtext3d(text = "Time", edge = 'y++', at = 6, line = 5, floating = TRUE)
+
+axis3d(edge = 'z--', labels = c("P", ".", ".", ".", "2", "1"))
+mtext3d(text = "Person", edge = 'z++', line = 4, floating = TRUE)
+
+view3d(theta = 0, phi = -60, zoom = .9, interactive = FALSE)
+grid3d(side = c("x+", "y-", "z+"), col = "black")
+rglwidget()
+```
+
+:::
+
+::: {.column width="50%"}
+<br><br><br> *Missing data can occur anywhere in the box!*
+
+* Constructs are often measured by groups of variables (items). Some or all 
+  items for a construct may be missing. 
+* Missingness often increases over time in longitudinal studies due to 
+  intermittent participation and/or dropout. 
+
+:::
+
+::::
 
 ## Types of Missingness
 
