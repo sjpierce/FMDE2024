@@ -299,7 +299,7 @@ internal validity.
 
 ## Consequences for Generalizability [@Fernández-García-RN4151; @McKnight-RN1296]
 
-A representative samples is crucial to generalizing to the intended population!
+A representative sample is crucial to generalizing to the intended population!
 
 * Theory development & cumulative knowledge
 * Policy & decision-making
