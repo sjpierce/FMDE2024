@@ -332,12 +332,35 @@ we may be using inaccurate or misleading findings to inform public policy and
 important decisions.
 :::
 
+# How can we diagnose the missing data issues for a given study? 
+
+::: {.notes}
+So, I've laid some foundations by defining missing data and discussing why it 
+matters, but each study is unique so the nature and extent of the missing data 
+issues it faces will vary across studies. Now the question is "how can we 
+diagnose the missing data issues for a given study?" because we can't make good 
+choices about what to do about missing data problems until we thoroughly 
+understand them. It's hard to solve a problem before you've adequately described 
+it. I'm going to cover some concepts that pertain to describing the mechanisms, 
+amounts, and patterns of missing data. 
+:::
+
+## Cattell's data box
+
+
+
+
 ## Types of Missingness
 
 * Item-level 
 * Construct 
 * Person-period 
 * Planned vs unplanned
+
+::: {.notes}
+
+:::
+
 
 ## Mechanisms of Missingness
 
