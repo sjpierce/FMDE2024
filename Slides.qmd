@@ -50,10 +50,7 @@ library(kableExtra) # Functions for formatting nice tables.
 * What is missing data? 
 * Why do we end up with missing data? 
 * Why should we care about missing data? 
-* Describing missing data
-    * Mechanisms
-    * Amount
-    * Patterns
+* How can we diagnose the missing data issues for a given study? 
 * What should we do about missing data?
     * Prevention
     * Diagnosis
