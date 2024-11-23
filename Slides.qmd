@@ -381,16 +381,36 @@ rglwidget()
 :::
 
 ::: {.column width="50%"}
-<br><br><br> *Missing data can occur anywhere in the box!*
+<br> *How much data is there? Data volume is* $N_{values} = P \times V \times T$
 
-* Constructs are often measured by groups of variables (items). Some or all 
-  items for a construct may be missing. 
-* Missingness often increases over time in longitudinal studies due to 
-  intermittent participation and/or dropout. 
+* Slices through the cube represent subsets of data. 
+* Constructs are often measured by groups of adjacent variables (items).  
+* Missing data puts holes in your cube!
 
 :::
 
 ::::
+
+::: {.notes}
+Raymond Cattell described data as forming a 3-dimensional box or cube, with the
+dimensions being persons, variables, and occasions (or times). This is useful
+for thinking about the total volume of data we aim to collect. At least for a
+simple longitudinal study where we collect the same instruments for each person
+at each time point, we can just multiply the number of desired participants by
+the number of variables by the number of time points to get the number of
+desired data values, which is the volume of the cube. Different slices through
+the cube represent specific subsets of data. The top layer would be all the data
+for a given person (all variables at all time points). The left-most vertical
+slice would be all the data for a specific variable across all persons and time
+points. The front face of the cube would be time 1 data on all variables for all
+persons. We could further refine this idea by recognizing that constructs are
+often measured by groups of adjacent variables (items).
+
+Missing data puts holes in the cube, turning it into something like Swiss 
+cheese. The impact of that depends on how much data volume is lost and any 
+patterns in where and why those holes are located relative to the data you want 
+to analyze. 
+:::
 
 ## Types of Missingness
 
