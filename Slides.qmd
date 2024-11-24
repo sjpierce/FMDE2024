@@ -414,13 +414,29 @@ to analyze.
 
 ## Types of Missingness
 
-* Item-level 
-* Construct 
-* Person-period 
-* Planned vs unplanned
+* Item level
+* Construct level
+* Person level 
+* Person-period level (intermittent vs. dropout)
 
 ::: {.notes}
+There are a variety of types of missingness to consider as we begin describing 
+a given data set. One place to start involves examining different parts of the
+data cube. For example, item-level missingness pertains to an individual 
+variable. What percentage of its values are missing? Contrast that with 
+construct-level missingness, which is when an entire construct is missing. Some 
+scoring methods leave a construct missing if any of its items are missing, 
+others may still yield a score despite some missing items. Construct missingness 
+is usually a bigger problem than item-level missing data. 
 
+Person-level missing data is when all the data for a person is missing. Refusing
+to participate will usually cause person-level missing data. That's an extreme
+example, but a related type of missingness happens at the person-period level
+when a participant skips an entire data collection event. That affects all
+constructs collected at that time point. In longitudinal studies, person-period 
+missingness could be intermittent, with a participant skipping one event but 
+returning for subsequent events, or it may be a result of dropout or attrition 
+that affects all remaining time points.
 :::
 
 
@@ -450,7 +466,7 @@ MNAR is when unobserved values predict which values are missing.
 [@McKnight-RN1296]
 
 * Numbers & percentages of complete & incomplete cases 
-* Number and percentage of missing values for each variable
+* Number & percentages of missing values for each variable
 * Nature and frequency of missing data patterns
 
 ## Predictors of Attrition & Missingness in Longitudinal Studies
