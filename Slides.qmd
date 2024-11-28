@@ -575,13 +575,17 @@ Unobserved -> Random -> Observed [style = "invis"]
   missing values
 * Other covariates (demographics)
 
-# Treatment
+# What should we do about missing data?
 
-# Prevention
+## Prevention
 
 An ounce of prevention is better than a pound of cure
 
 @de-Leeuw-RN8682, @Wisniewski-RN2978
+
+## Treatment
+
+## Reporting
 
 # Advice
 
