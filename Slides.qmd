@@ -439,6 +439,33 @@ returning for subsequent events, or it may be a result of dropout or attrition
 that affects all remaining time points.
 :::
 
+## Describing the Amount of MD [@McKnight-RN1296; @van-Buuren-RN3962]
+
+Report numbers & percentages of: 
+
+* Participants w/ *any data* at each time point (retention/attrition)
+* Complete vs. incomplete cases (overall & by time point)
+* Missing values for each variable & construct
+* Reasons for attrition/dropout and other missing data
+
+::: {.notes}
+The dimensions of Cattell's data box suggests some obvious summaries of the 
+amount of missing data. For example, we probably want to examine and report the 
+number and percentage of participants in the study who have any data at each 
+time point and use that to compute retention or attrition rates. Then we can go 
+further and report the number of complete vs. incomplete cases, both overall and
+separately by time point. Then, we can compute the numbers and percentages of 
+missing values for each variable, both overall and separately by time point. 
+
+Finally, it can be really useful to report on the reasons why participants drop 
+out, skip data collection events, or have other missing data. 
+
+All of these things get easier when you have a tracking system that records: 
+
+* Whether & when participants attended data each collection event
+* When & why participants exit the study 
+
+:::
 
 ## Mechanisms of Missingness
 
@@ -450,8 +477,6 @@ that affects all remaining time points.
 MCAR is when neither observed nor unobserved variables predict which data is 
 missing. 
 
-
-
 ## MAR
 MAR is when observed values predict which data is missing.
 
@@ -461,13 +486,6 @@ MNAR is when unobserved values predict which values are missing.
 
 # Diagnosis
 
-## Describing the Amount of MD
-
-[@McKnight-RN1296]
-
-* Numbers & percentages of complete & incomplete cases 
-* Number & percentages of missing values for each variable
-* Nature and frequency of missing data patterns
 
 ## Predictors of Attrition & Missingness in Longitudinal Studies
 
