@@ -53,9 +53,6 @@ library(rgl)        # for cube3d()
 * Why should we care about missing data? 
 * How can we diagnose the missing data issues for a given study? 
 * What should we do about missing data?
-    * Prevention
-    * Diagnosis
-    * Treatment
 * Advice
 
 # What is missing data?
