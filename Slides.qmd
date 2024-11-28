@@ -464,11 +464,34 @@ All of these things get easier when you have a tracking system that records:
 
 :::
 
-## Mechanisms of Missingness
+## Patterns of Missing Data
+
+::: {.notes}
+Need to add example of missing data pattern analysis and interpretation. 
+:::
+
+## Rubin's Mechanisms of Missingness [@Rubin-RN8695]
 
 * Missing completely at random (MCAR)
 * Missing at random (MAR)
 * Missing not at random (MNAR)
+
+::: {.fragment}
+
+:::{.callout-caution title = "Impact on Statistical Results [@McKnight-RN1296]"}
+Some mechanisms yield more bias: **MCAR < MAR < MNAR**
+:::
+
+:::
+
+::: {.notes}
+Understanding Donald Rubin's system for classifying missing data is crucial to 
+making good decisions about how to handle missing data. Rubin defined three 
+catgegories, each referring to the probability of missing values given 
+information about the variables with missing data, other covariates, and a 
+hypothetical mechanism that causes the missing data.
+:::
+
 
 ## MCAR
 MCAR is when neither observed nor unobserved variables predict which data is 
