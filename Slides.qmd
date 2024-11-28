@@ -573,7 +573,7 @@ Unobserved -> Random -> Observed [style = "invis"]
 * Study site (in multisite studies)
 * Baseline/pretest values of outcome variables may predict who drops out or has 
   missing values
-* Other covariates (demographics, site, )
+* Other covariates (demographics)
 
 # Treatment
 
