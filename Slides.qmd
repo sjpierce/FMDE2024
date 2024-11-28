@@ -494,18 +494,78 @@ hypothetical mechanism that causes the missing data.
 
 
 ## MCAR
-MCAR is when neither observed nor unobserved variables predict which data is 
+MCAR is when neither observed nor unobserved variables predict which values are 
 missing. 
 
+```{dot}
+//| fig-width: 9
+//| fig-height: 4
+digraph MCAR {
+rankdir="LR";
+
+node [shape = "ellipse", style= "filled", fontname="Lato", fillcolor = "#C3FFEC"]
+Missing [label = "Missingness\n(R)"]
+Observed [label = "Observed Values\n(Y_obs)", style = "dashed"]
+Random [label = "Random Processes\n "]
+Unobserved [label = "Unobserved Values\n(Y_miss)", style = "dashed"]
+
+edge [fontname="Lato"]
+Random -> Missing [label = "Predict"]
+Unobserved -> Random -> Observed [style = "invis"]
+
+{rank = same; Unobserved; Random; Observed}
+}
+```
+
+
 ## MAR
-MAR is when observed values predict which data is missing.
+MAR is when observed values predict which values are missing.
+
+```{dot}
+//| fig-width: 9
+//| fig-height: 4
+digraph MAR {
+rankdir="LR";
+
+node [shape = "ellipse", style= "filled", fontname="Lato", fillcolor = "#C3FFEC"]
+Missing [label = "Missingness\n(R)"]
+Observed [label = "Observed Values\n(Y_obs)"]
+Random [label = "Random Processes\n ", style = "dashed"]
+Unobserved [label = "Unobserved Values\n(Y_miss)", style = "dashed"]
+
+edge [fontname="Lato"]
+Observed -> Missing [label = "Predict"]
+Unobserved -> Random -> Observed [style = "invis"]
+Random -> Missing [style = "invis"]
+Unobserved -> Missing [style = "invis"]
+
+{rank = same; Unobserved; Random; Observed}
+}
+```
 
 ## MNAR
 MNAR is when unobserved values predict which values are missing. 
 
+```{dot}
+//| fig-width: 9
+//| fig-height: 4
+digraph MNAR {
+rankdir="LR";
 
-# Diagnosis
+node [shape = "ellipse", style= "filled", fontname="Lato", fillcolor = "#C3FFEC"]
+Missing [label = "Missingness\n(R)"]
+Observed [label = "Observed Values\n(Y_obs)", style = "dashed"]
+Random [label = "Random Processes\n ", style = "dashed"]
+Unobserved [label = "Unobserved Values\n(Y_miss)"]
 
+edge [fontname="Lato"]
+Unobserved -> Missing [label = "Predict"]
+Observed -> Missing [style = "dashed"]
+Unobserved -> Random -> Observed [style = "invis"]
+
+{rank = same; Unobserved; Random; Observed}
+}
+```
 
 ## Predictors of Attrition & Missingness in Longitudinal Studies
 
