@@ -514,9 +514,11 @@ can aggregate across cases to identify unique patterns of missing vs observed
 values and see how often they occur.
 :::
 
-## Patterns of Missing Data 
+## Example Patterns of Missing Data 
 
 ```{r}
+#| fig-cap: "Missingness patterns for Dutch boys growth study data (748 boys, 9 
+#|           variables, 1 time point) [@Fredriks-RN8696]"
 
 plot_pattern(boys, square = FALSE, rotate = FALSE)
 ```
@@ -532,7 +534,8 @@ across the whole set of variables. The left side is annotated with the number of
 boys showing each pattern, the right side tells you how many missing values 
 there are on that row, and the bottom shows the total number of missing values 
 for each variable. With 748 boys and 9 variables, there should be 6732 values, 
-but we can see at the bottom that 1622 (24%) are missing. 
+but we can see at the bottom that 1622 (24%) are missing. So this data box has 
+a lot of holes in it. 
 
 The first row shows 223 boys have complete data: that's about 30% of the sample. 
 So, 70% of them have at least one missing value. We can also see that the most 
