@@ -45,6 +45,8 @@ library(tidyverse)
 library(knitr)
 library(kableExtra) # Functions for formatting nice tables. 
 library(rgl)        # for cube3d()
+library(mice)       # for 
+library(ggmice)     # for plot_pattern
 ```
 
 ## Outline
