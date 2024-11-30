@@ -514,6 +514,36 @@ can aggregate across cases to identify unique patterns of missing vs observed
 values and see how often they occur.
 :::
 
+## Patterns of Missing Data 
+
+```{r}
+
+plot_pattern(boys, square = FALSE, rotate = FALSE)
+```
+
+::: {.notes}
+This is graph summarizes data from a developmental study about growth in 748
+Dutch boys. The variables include age, region, weight, height, body mass index,
+head circumference, and three measures of pubertal development. This is just a
+convenient dataset because it comes with an R package that I use to deal with 
+missing data. The graph illustrates what I mean by missing data patterns. Each 
+row in the graph represents a distinct pattern of observed versus missing values 
+across the whole set of variables. The left side is annotated with the number of 
+boys showing each pattern, the right side tells you how many missing values 
+there are on that row, and the bottom shows the total number of missing values 
+for each variable. With 748 boys and 9 variables, there should be 6732 values, 
+but we can see at the bottom that 1622 (24%) are missing. 
+
+The first row shows 223 boys have complete data: that's about 30% of the sample. 
+So, 70% of them have at least one missing value. We can also see that the most 
+common pattern is that 437 boys have missing data for the 3 pubertal development
+measures, but observed data on all the other measures. That's 58% of the sample. 
+
+Another thing we can see here is that body mass index is always missing whenever 
+either height or weight is missing. That's because BMI is a measure derived from 
+both height and weight. That's construct missingness caused by item-missingness. 
+:::
+
 ## Rubin's Mechanisms of Missingness [@Rubin-RN8695]
 
 * Missing completely at random (MCAR)
