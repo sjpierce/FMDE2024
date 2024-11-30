@@ -462,7 +462,7 @@ Report numbers & percentages of:
 The dimensions of Cattell's data box suggests some obvious summaries of the 
 amount of missing data. For example, we probably want to examine and report the 
 number and percentage of participants in the study who have any data at each 
-time point and use that to compute retention or attrition rates. Then we can go 
+time point and use that to examine retention or attrition rates. Then we can go 
 further and report the number of complete vs. incomplete cases, both overall and
 separately by time point. Then, we can compute the numbers and percentages of 
 missing values for each variable, both overall and separately by time point. 
