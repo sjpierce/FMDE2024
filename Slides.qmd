@@ -421,12 +421,12 @@ patterns in where and why those holes are located relative to the data you want
 to analyze. 
 :::
 
-## Types of Missingness
+## Types of Missingness [@McKnight-RN1296; @Schafer-RN425]
 
 * Item level
 * Construct level
-* Person level 
-* Person-period level (intermittent vs. dropout)
+* Person level (unit non-response)
+* Person-period level (wave nonresponse; intermittent vs. dropout)
 
 ::: {.notes}
 There are a variety of types of missingness to consider as we begin describing 
@@ -438,14 +438,15 @@ scoring methods leave a construct missing if any of its items are missing,
 others may still yield a score despite some missing items. Construct missingness 
 is usually a bigger problem than item-level missing data. 
 
-Person-level missing data is when all the data for a person is missing. Refusing
-to participate will usually cause person-level missing data. That's an extreme
-example, but a related type of missingness happens at the person-period level
-when a participant skips an entire data collection event. That affects all
-constructs collected at that time point. In longitudinal studies, person-period 
-missingness could be intermittent, with a participant skipping one event but 
-returning for subsequent events, or it may be a result of dropout or attrition 
-that affects all remaining time points.
+Person-level missing data, some times called unit nonresponse, is when all the
+data for a person is missing. Refusing to participate will usually cause
+person-level missing data. That's an extreme example, but a related type of
+missingness happens at the person-period level when a participant skips an
+entire data collection event. That's also called wave non-response. It affects
+all constructs collected at that time point. In longitudinal studies,
+person-period missingness could be intermittent, with a participant skipping one
+event but returning for subsequent events, or it may be a result of dropout or
+attrition that affects all remaining time points.
 :::
 
 ## Describing the Amount of MD [@McKnight-RN1296; @van-Buuren-RN3962]
