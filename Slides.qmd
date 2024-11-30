@@ -531,14 +531,22 @@ Some mechanisms yield more bias: **MCAR < MAR < MNAR**
 ::: {.notes}
 Understanding Donald Rubin's system for classifying missing data is crucial to 
 making good decisions about how to handle missing data. Rubin defined three 
-catgegories, each referring to the probability of missing values given 
+categories, each referring to the probability of missing values given 
 information about the variables with missing data, other covariates, and a 
-hypothetical mechanism that causes the missing data.
+hypothetical mechanism that causes the missing data. The three categories are:
+
+* Missing completely at random (MCAR)
+* Missing at random (MAR)
+* Missing not at random (MNAR)
+
+These three mechanisms affect the amount of bias missing data causes in 
+statistical analyses, with MCAR yielding the least bias and MNAR yielding the 
+most. Let's take a closer look at each mechanism. 
 :::
 
 
 ## MCAR
-MCAR is when neither observed nor unobserved variables predict which values are 
+MCAR is when neither observed nor unobserved values predict which values are 
 missing. 
 
 ```{dot}
@@ -550,7 +558,7 @@ rankdir="LR";
 node [shape = "ellipse", style= "filled", fontname="Lato", fillcolor = "#C3FFEC"]
 Missing [label = "Missingness\n(R)"]
 Observed [label = "Observed Values\n(Y_obs)", style = "dashed"]
-Random [label = "Random Processes\n "]
+Random [label = "Random Processes\nUnrelated to Y"]
 Unobserved [label = "Unobserved Values\n(Y_miss)", style = "dashed"]
 
 edge [fontname="Lato"]
@@ -561,6 +569,13 @@ Unobserved -> Random -> Observed [style = "invis"]
 }
 ```
 
+:::{.notes}
+MCAR is the least damaging kind of missingness because it means that neither
+observed nor unobserved values predict which values are likely to be missing.
+The missingness is entirely a result of random processes. That's why it causes
+the least bias in statistical analyses. However, using listwise deletion will
+still reduce measurement reliability and statistical power and precision.
+:::
 
 ## MAR
 MAR is when observed values predict which values are missing.
@@ -574,18 +589,26 @@ rankdir="LR";
 node [shape = "ellipse", style= "filled", fontname="Lato", fillcolor = "#C3FFEC"]
 Missing [label = "Missingness\n(R)"]
 Observed [label = "Observed Values\n(Y_obs)"]
-Random [label = "Random Processes\n ", style = "dashed"]
+Random [label = "Random Processes\nUnrelated to Y"]
 Unobserved [label = "Unobserved Values\n(Y_miss)", style = "dashed"]
 
 edge [fontname="Lato"]
 Observed -> Missing [label = "Predict"]
 Unobserved -> Random -> Observed [style = "invis"]
-Random -> Missing [style = "invis"]
+Random -> Missing [label = "Predict"]
 Unobserved -> Missing [style = "invis"]
 
 {rank = same; Unobserved; Random; Observed}
 }
 ```
+
+
+:::{.notes}
+MAR is when observed values predict which values are likely to be missing. 
+
+MAR is ignorable nonresponse [@Schafer-RN425]. It allows probability of 
+missingess to depend on observed data, but not on the unobserved, missing data. 
+:::
 
 ## MNAR
 MNAR is when unobserved values predict which values are missing. 
@@ -598,18 +621,27 @@ rankdir="LR";
 
 node [shape = "ellipse", style= "filled", fontname="Lato", fillcolor = "#C3FFEC"]
 Missing [label = "Missingness\n(R)"]
-Observed [label = "Observed Values\n(Y_obs)", style = "dashed"]
-Random [label = "Random Processes\n ", style = "dashed"]
+Observed [label = "Observed Values\n(Y_obs)"]
+Random [label = "Random Processes\nUnrelated to Y"]
 Unobserved [label = "Unobserved Values\n(Y_miss)"]
 
 edge [fontname="Lato"]
 Unobserved -> Missing [label = "Predict"]
-Observed -> Missing [style = "dashed"]
+Random -> Missing [label = "Predict"]
+Observed -> Missing [label = "Predict"]
 Unobserved -> Random -> Observed [style = "invis"]
 
 {rank = same; Unobserved; Random; Observed}
 }
 ```
+
+:::{.notes}
+
+
+MNAR is non-ignorable nonresponbse [@Schafer-RN425]. The challenge here is that 
+we can't prove MNAR without actually obtaining the data that are missing. 
+:::
+
 
 ## Predictors of Attrition & Missingness in Longitudinal Studies
 
