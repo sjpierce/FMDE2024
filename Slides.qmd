@@ -477,10 +477,41 @@ All of these things get easier when you have a tracking system that records:
 
 :::
 
-## Patterns of Missing Data
+## Patterns of Missing Data [@Schafer-RN425]
+
+::: {.incremental}
+
+* **Y**: matrix of all the values that *could* be observed 
+* **Y_obs**: subset of **Y** values that end up observed 
+* **Y_miss**: subset of **Y** values that end up missing 
+* **R**: response matrix of dummy-coded missingness indicators showing which 
+  **Y** values are observed (0, part of **Y_obs**) vs. missing (1, part of 
+  **Y_miss**)
+:::
+
+::: {.fragment}
+
+::: {.callout-tip}
+We can aggregrate and visualize **R** to describe patterns of missingness!
+:::
+
+:::
 
 ::: {.notes}
-Need to add example of missing data pattern analysis and interpretation. 
+Now I need to define a few terms. 
+
+* **>** Suppose Y is a complete matrix of all the cases, variables, and values 
+that could be observed. We can split it into two pieces, 
+* **>** Y_obs which is the subset of Y that that ends up being observed and 
+* **>** Y_miss is the subset that ends up missing. 
+* **>** We can then define a repsonse matrix called R that has a dummy-coded 
+  missingess indicators that use a 0 to denote which Y values are observed and 
+  part of Y_obs, and a 1 for those that are missing and belong to Y_miss 
+  instead. R has the same number of variables as Y.
+
+Creating R gives us some ways to examine missing data issues. For example, we
+can aggregate across cases to identify unique patterns of missing vs observed
+values and see how often they occur.
 :::
 
 ## Rubin's Mechanisms of Missingness [@Rubin-RN8695]
