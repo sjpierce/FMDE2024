@@ -518,6 +518,7 @@ values and see how often they occur.
 ## Example Patterns of Missing Data 
 
 ```{r}
+#| label: example-patterns
 #| fig-cap: "Missingness patterns for Dutch boys growth study data (748 boys, 9 
 #|           variables, 1 time point) [@Fredriks-RN8696]"
 
