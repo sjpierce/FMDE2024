@@ -641,10 +641,15 @@ Unobserved -> Missing [style = "invis"]
 
 
 :::{.notes}
-MAR is when observed values predict which values are likely to be missing. 
-
-MAR is ignorable nonresponse [@Schafer-RN425]. It allows probability of 
-missingess to depend on observed data, but not on the unobserved, missing data. 
+MAR is when observed values predict which values are likely to be missing. Thus,
+we can see patterns in what's missing because that's related to data that we
+have available. While there may still be some random influences too, the crucial
+feature of MAR is that the probability of missingess depends on observed data
+but not on the unobserved, missing data itself. MAR is sometimes called
+ignorable nonresponse [@Schafer-RN425], but that ignorability depends on how you
+handle the missing data during analyses. This mechanism is plausible for many 
+datasets. You can usually use simple analyses to demonstrate that MAR is more 
+plausible than MCAR. 
 :::
 
 ## MNAR
@@ -673,10 +678,14 @@ Unobserved -> Random -> Observed [style = "invis"]
 ```
 
 :::{.notes}
-
-
-MNAR is non-ignorable nonresponbse [@Schafer-RN425]. The challenge here is that 
-we can't prove MNAR without actually obtaining the data that are missing. 
+MNAR is sometimes called non-ignorable nonresponse [@Schafer-RN425]. That's
+because whether or not a value is missing depends on the unobserved values,
+either on the variable itself, or on other unobserved variables. There are
+hidden patterns to the missingness that we can't easily account for in our
+analyses. That leads to potentially serious biases in our results. One challenge
+is that we can't prove our data is MNAR without actually obtaining the data that
+are missing. However, if we can get that, then we don't need to worry about
+missing data anymore.
 :::
 
 
