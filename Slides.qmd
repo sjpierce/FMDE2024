@@ -606,9 +606,12 @@ Unobserved -> Random -> Observed [style = "invis"]
 :::{.notes}
 MCAR is the least damaging kind of missingness because it means that neither
 observed nor unobserved values predict which values are likely to be missing.
-The missingness is entirely a result of random processes. That's why it causes
-the least bias in statistical analyses. However, using listwise deletion will
-still reduce measurement reliability and statistical power and precision.
+The missingness is entirely a result of random processes and there's no
+discernible pattern to it. That's why it causes the least bias in statistical
+analyses. However, using listwise deletion will still reduce measurement
+reliability and statistical power and precision. There is at least one formal 
+statistical test for whether MCAR is a plausible mechanism. I don't see if used 
+very often though.
 :::
 
 ## MAR
