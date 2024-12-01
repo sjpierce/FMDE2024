@@ -136,6 +136,7 @@ for one of my projects.
 ```{dot}
 //| fig-width: 9
 //| fig-height: 6
+
 digraph WhenMD {
 rankdir="TB";
 
@@ -586,6 +587,7 @@ missing.
 ```{dot}
 //| fig-width: 9
 //| fig-height: 4
+
 digraph MCAR {
 rankdir="LR";
 
@@ -620,6 +622,7 @@ MAR is when observed values predict which values are missing.
 ```{dot}
 //| fig-width: 9
 //| fig-height: 4
+
 digraph MAR {
 rankdir="LR";
 
@@ -658,6 +661,7 @@ MNAR is when unobserved values predict which values are missing.
 ```{dot}
 //| fig-width: 9
 //| fig-height: 4
+
 digraph MNAR {
 rankdir="LR";
 
@@ -687,7 +691,6 @@ is that we can't prove our data is MNAR without actually obtaining the data that
 are missing. However, if we can get that, then we don't need to worry about
 missing data anymore.
 :::
-
 
 ## Predictors of Attrition & Missingness in Longitudinal Studies
 
