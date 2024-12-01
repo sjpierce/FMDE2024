@@ -691,7 +691,7 @@ missing data anymore.
 
 ## Predictors of Attrition & Missingness in Longitudinal Studies
 
-* Study arm: Compare retention rates 
+* Study arm: Compare attrition rates 
 * Study site (in multisite studies)
 * Baseline/pretest values of outcome variables may predict who drops out or has 
   missing values
