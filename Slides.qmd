@@ -471,7 +471,7 @@ Track attendance at data collection events & participants' exit from the study.
 ::: {.notes}
 The dimensions of Cattell's data box suggests some obvious summaries of the 
 amount of missing data. For example, we probably want to examine and report the 
-number and percentage of participants in the study who have any data at each 
+number and percentage of participants in the study who have *any data* at each 
 time point and use that to examine retention or attrition rates. Then we can go 
 further and report the number of complete vs. incomplete cases, both overall and
 separately by time point. Then, we can compute the numbers and percentages of 
@@ -480,7 +480,8 @@ missing values for each variable, both overall and separately by time point.
 Finally, it can be really useful to report on the reasons why participants drop 
 out, skip data collection events, or have other missing data. 
 
-All of these things get easier when you have a tracking system that records: 
+**>** All of these things get easier when you have a tracking system that 
+records: 
 
 * Whether & when participants attended data each collection event
 * When & why participants exit the study 
@@ -514,13 +515,13 @@ Now I need to define a few terms.
 that could be observed. We can split it into two pieces, 
 * **>** Y_obs which is the subset of Y that that ends up being observed and 
 * **>** Y_miss is the subset that ends up missing. 
-* **>** We can then define a repsonse matrix called R that has a dummy-coded 
-  missingess indicators that use a 0 to denote which Y values are observed and 
-  part of Y_obs, and a 1 for those that are missing and belong to Y_miss 
-  instead. R has the same number of variables as Y.
+* **>** We can then define a repsonse matrix called R that has a set of 
+  dummy-coded missingess indicators that use a 0 to denote which Y values are 
+  observed and part of Y_obs, and a 1 for those that are missing and belong to 
+  Y_miss instead. R has the same number of variables as Y.
 
-Creating R gives us some ways to examine missing data issues. For example, we
-can aggregate across cases to identify unique patterns of missing vs observed
+**>** Creating R gives us some ways to examine missing data issues. For example, 
+we can aggregate across cases to identify unique patterns of missing vs observed
 values and see how often they occur.
 :::
 
@@ -574,18 +575,18 @@ Some mechanisms yield more bias: **MCAR < MAR < MNAR**
 
 ::: {.notes}
 Understanding Donald Rubin's system for classifying missing data is crucial to
-making good decisions about how to handle missing data. This classification
-systm is pervasive in the literature on missing data because it is very useful
-despite having unintuitive names. Rubin defined three categories, each referring
-to the probability of missing values given information about the variables with
-missing data, other covariates, and a hypothetical mechanism that causes the
-missing data. The three categories are:
+making good decisions about how to handle missing data. This system is pervasive
+in the literature on missing data because it's useful despite reliance on some
+unintuitive names. Rubin defined three categories, each referring to the
+probability of missing values given information about the variables with missing
+data, other covariates, and a hypothetical mechanism that causes the missing
+data. The three categories are:
 
 * Missing completely at random (MCAR)
 * Missing at random (MAR)
 * Missing not at random (MNAR)
 
-These three mechanisms affect the amount of bias missing data causes in 
+**>** These three mechanisms affect the amount of bias missing data causes in 
 statistical analyses, with MCAR yielding the least bias and MNAR yielding the 
 most. Let's take a closer look at each mechanism. 
 :::
