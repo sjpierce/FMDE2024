@@ -707,34 +707,325 @@ scientists may or may not be persuaded by those arguments when you can't provide
 supporting evidence due to lack of the necessary data.
 :::
 
-## Predictors of Attrition & Missingness in Longitudinal Studies
+## Rubin's Mechanisms & Cattell's Box [@Cattell-RN8693; @McKnight-RN1296; @Rubin-RN8695]
 
-* Study arm: Compare attrition rates 
-* Study site (in multisite studies)
-* Baseline/pretest values of outcome variables may predict who drops out or has 
-  missing values
+Classifying large datasets according to Rubin's mechanisms is *messy*. 
+
+::: {.incremental}
+* Subsets of the data may fit into different mechanisms
+* Classify mechanisms for meaningful subsets of data defined by dimensions of 
+  the data box (persons, variables, times) [@McKnight-RN1296] 
+:::
+
+:::{.notes}
+McKnight and colleagues pointed out that classfying large datasets into Rubin's 
+mechanisms is a practical challenge because it just gets messy. The task can 
+feel overwhelming. 
+
+* **>** It can be daunting because variables may be subject to different 
+  missingness mechanisms. One set of variables might really be MCAR while others 
+  are MAR. 
+* **>** One way to start solving that problem is to use the dimensions of 
+  Cattell's box (persons, variables, and times) to describe missing data and 
+  classify missingness mechanisms in meaningful subsets of the data. 
+
+:::
+
+
+## Predictors of Missingness in Longitudinal Studies
+
+* Study arms and/or sites
+* Baseline/pretest values of outcome variables 
 * Other covariates (demographics)
+
+::: {.fragment}
+
+::: {.callout-tip}
+Consider predictors of person, item, construct, and person-period missingness. 
+Think carefully about your study context and data to look for meaningful, 
+sensible things to test when evaluating missing data issues. 
+:::
+
+:::
+
+:::{.notes}
+Because we can't prove that our missing data is MNAR, one of the key tasks is 
+differentiating between data that are MCAR and MAR. The obvious way to do that 
+is to run some analyses to look at whether you can predict which values are 
+missing. Here are some examples of analyses you might use in various 
+situations to identify which missingness mechanism applies to your data. 
+
+If you have a study with multiple arms (that is groups, like intervention and 
+control) or sites, consider compring consent and attrition rates between them. 
+If more people are differentially consenting or dropping out of one arm or site, 
+then that variable predicts missingness and you have at best a MAR situation. 
+
+Another possible predictor of missingness at later time points is the pretest 
+value of the longitudinal outcome measure. Depending on the outcome, maybe
+people with unusually high or low scores are more likely to end up with missing 
+data later on. 
+
+Of course, demographics and other covariates may also be predictors of missing 
+data. 
+
+**>** So the take away here is that your initial data analysis needs to consider 
+testing for predictors of missingness. That may be a matter of predicting 
+either person-level non-response (refusal to participate), item or 
+construct-level missingness, or person-period missingness, such as attrition or 
+intermittently skipping data collection events. Finding predictors of 
+missingness means that you have a MAR situation. 
+:::
 
 # What should we do about missing data?
 
-## Prevention
+:::{.notes}
+*Timing note: ~ 30 min in by this slide.*
 
-An ounce of prevention is better than a pound of cure
+The million-dollar question is ultimately "what should we do about missing 
+data?" Let's discuss that next. 
+:::
 
-@de-Leeuw-RN8682, @Wisniewski-RN2978
+## Prevention [@de-Leeuw-RN8682; @McKnight-RN1296; @Wisniewski-RN2978]  {style="text-align: right;" background-image="graphics/boston-public-library-ts_mJIUonBY-unsplash.jpg" background-size="contain" background-position="left" background-repeat="no-repeat"}
 
-## Treatment
+:::: {.columns}
+::: {.column width="55%"}
+:::
+
+::: {.column width="45%"}
+"An ounce of prevention is worth a pound of cure." (Benjamin Franklin, 1735)
+
+* The amount of missing data affects its potential impact on the study  
+* Design your study to reduce the amount of missing data
+
+:::
+::::
+
+:::{.notes}
+As the old adage says, "An ounce of prevention is worth a pound of cure." This 
+absolutely applies to handling missing data problems. 
+
+Statistical methods for analyzing incomplete datasets are great, but using them 
+requires knowledge, skill, software, time, and effort. The size and complexity 
+of the missing data problem is directly related to its potential impact on your 
+study and what it will take to solve that problem.  
+
+Fortunately, good study design can help evaluators reduce the probability and 
+amount of missing data, thereby reducing its potential impact on measurement, 
+internal validity, and generalizability. The prevention suggestions I'm going 
+to share are by no means an exhaustive list; I just want you to recognize that 
+prevention is your first, and possibly best, opportunity to handle missing data 
+problems. 
+:::
+
+## Prevention: Data Collection Frequency & Timing [@McKnight-RN1296] 
+
+* Frequent data collection with short intervals between events is burdensome
+* Collect longitudinal data at sensible times given expected temporal patterns
+
+:::{.notes}
+First, let's consider fine-tuning data collection logistics. When participants 
+have to put effort into responding, frequent data collection at short intervals
+increases their burden. That risks decreasing their motivation and the effort 
+put into any given response, which could cause item, construct, or 
+wave non-response, or even lead to dropout. 
+
+While having rich longitudinal data is good for modeling, it is better to have 
+more complete data collected at the right times than to have many time points. 
+Often we have an idea about the temporal patterns of change that we expect, so 
+focus on the critical periods that enable you to see the key aspects of 
+longitudinal trajectories. Collect more often during periods where you expect 
+rapid change and less often when expect relative stability or slower change. 
+:::
+
+## Prevention: Number of Variables [@de-Leeuw-RN8682; @McKnight-RN1296; @Wisniewski-RN2978] 
+
+Every variable is an opportunity for missing data. 
+
+* Only collect variables that you need
+* Choose instruments wisely (short, reliable, valid, & relevant)
+* Consider collecting multiple measures of key constructs
+
+:::{.notes}
+Remember that every variable you try to collect adds to participant burden. 
+Asking for too much risks tiring, frustrating, boring, or irritating people in 
+ways that lead to missing data. 
+
+You can reduce missing data problems by only collecting variables you need. You 
+should know why you need each variable or instrument. Similarly, you should 
+choose instruments wisely: pick things that are short, reliable, and valid 
+whenever possible. Making sure their relevance is clear to participants may also
+help because people may be more likely to skip things they think are irrelevant
+or offensive. 
+
+On the other hand, there is a case for strategically collecting multiple 
+measures of key constructs. Different measures of a construct are often 
+correlated and that can help you if data for one are incomplete but another is 
+complete. Relationships between measures can be used to recover some of the 
+missing information when modeling incomplete datasets. 
+:::
+
+## Prevention: Dropout [@de-Leeuw-RN8682; @Laurie-RN8257; @McKnight-RN1296; @Wisniewski-RN2978] 
+
+* Establish relationships 
+* Maintain contact with participants 
+* Offer adequate incentives
+* Make participation convenient
+
+:::{.notes}
+*Timing should be ~33-34 min by here.*
+Dropout is a major cause of missing data in longitudinal studies, but there are
+some strategies you can use to minimize it. I'll describe some strategies we use 
+on an evaluation of EFNEP, a federal nutrition education program for low-income 
+people.
+
+We partner with local organizations to find participants, so establishing good 
+relationships with them means they sometimes help us keep participants engaged. 
+
+Another key strategy is maintaining contact with particpants. We use reminder
+postcards, text messages, and phone calls to encourage people to attend the
+follow-up data collection events. Even if someone skips the 6-month event we
+still invite them to the 12 month event unless they explicitly withdraw from the
+study because intermittent wave non-response is better than complete dropout.
+
+We also aim to offer people adequate incentives to participate. We pay 
+participants promptly for each data collection event, with the amounts 
+increasing over time. 
+
+Finally, we make data collection convenient by scheduling events at locations
+and times that are easy for groups of participants to attend. Sometimes we have
+to schedule extra sessions. We send multiple data collectors to each session so
+it runs efficiently and reduces how much time participants have to spend. For
+some groups, we use translated instruments and staff that speak Spanish to
+better engage participants in their primary language.
+:::
+
+## Prevention: Data Collection Methods
+
+* Develop detailed protocols
+* Train data collection & entry staff 
+* Pay attention to instrument design 
+* Test equipment & instruments
+
+:::{.notes}
+Because data collection is essential to evaluation projects, we need to develop
+detailed protocols that will maximize data quality. Study protocols should
+anticipate the possibility of missing data and include elements that may prevent
+it. For example, make checklists of the materials required for each data
+collection event and review it in advance of each one. If you're administering
+print surveys in a group setting, check each one for skipped items or sections
+as it's handed in while there's still a chance for the participant to respond.
+If you're using an online survey, program it to notify participants when they
+skip something and give them the option to either fill it in or proceed anyway.
+Say you're going to observe a classroom setting. Consider using multiple
+observers and structured forms for recording data. Make sure the behaviors to be
+recorded are clearly defined. Keep observation sessions short enough to avoid
+fatigue and inattention. Similar ideas apply if you're going to review documents
+or abstract data from records: use multiple staff, structured forms, and clear
+definitions.
+
+Train the data collection staff on the protocols and get them to practice before
+collecting real data if possible. For data entry, plan a review process and give 
+staff performance feedback. Consider using double-entry and reconciling 
+discrepancies between the data entered by 2 different staff. 
+
+Poorly designed instruments may increase the rate of missing data. Pay close 
+attention to instrument design. Make sure instructions and wording are clear, 
+layout is readable, response options make sense, and generally follow principles 
+of good survey design. Pilot test the instruments. 
+
+Make sure you test equipment regularly, have spare devices, cords, or batteries
+in case one fails. Make sure staff know how to use the equipment. If you're 
+using online data collection tools, test skip patterns carefully before starting 
+data collection.
+:::
+
+## Treatment: Traditional Methods [@Enders-RN8673; @McKnight-RN1296]
+
+``` {r}
+#| label: tbl-outdated
+
+data.frame(Deletion = c("Listwise deletion", "Pairwise deletion", 
+                        "Available Items Analysis", 
+                        "Growth Curve Models", " "),
+           Single = c("Mean Substitution", "Regression Imputation", 
+                      "Hot-Deck Imputation", "Averaging Available Items",
+                      "Last Observation Carried Forward")) %>% 
+  kable(., format = "html", 
+        col.names = c("Data Deletion Methods", 
+                      "Single Imputation Methods")) %>% 
+  kable_classic(full_width = FALSE, lightable_options = c("hover"), 
+                html_font = "Lato")
+```
+
+:::{.notes}
+*Timing should be ~37-38 min by here.*
+Despite effective prevention measures, you're still likely to end up with some 
+missing data. A variety of traditional methods for handling missing data have 
+been used and discussed in the literature. This table lists examples of two 
+types of approaches to the problem: data deletion methods and single imputation 
+methods. 
+
+Listwise deletion means you drop every case that has missing data on any 
+variable in the analysis. That's perhaps the most commonly used method because 
+it is the default behavior for many statistical software packages. *It can only* 
+*give you unbiased parameter estimates if the data are MCAR*, but even then you 
+still lose power and precision due to shrinking sample size. But MCAR is a rare 
+situation. You're far more likley to have MAR, and then using listwise deletion 
+will give you biased results in addition to low power. If there are high rates 
+missingness and many different patterns of missingness, you may not end up with
+enough observations to do meaningful analyses.
+
+Pairwise deletion uses all available data by only eliminating data at the 
+variable level instead of the person level. In a correlation matrix, pairwise 
+deletion allows sample size to vary depending on which variables you're 
+correlating. That preserves more power, but is still only unbiased under MCAR 
+and it causes other problems. For example, different subsets of cases may be 
+used for each variable. That can lead to problems with standard errors.
+
+The available items method is used when combining multiple items to measure 
+constructs. If you've got a 6 item-scale for depression but only 4 items are 
+complete, you might take the mean of those 4 and use that as the scale score. 
+This makes really strong assumptions about the missing items being 
+interchangeable and about the factor structure. It may decrease variance the 
+variance between items and will often decrease reliability. 
+
+Individual growth curve models use the available longitudinal observations for 
+each person to estimate longitudinal trajectories in a way that is similar to 
+how available items are used to measure constructs. This can be misleading when 
+the missing values would alter the trajectories, or when the missing data are 
+not correlated with the observed data. Where along the time axis the values are 
+missing may influence how much the missing data affect the 
+trajectory. Dropout removes the 
+
+
+:::
+
+## Treatment: Modern Methods
+
+* Full-information maximum likelihood (FIML) estimation
+* Multiple imputation
+
+:::{.notes}
+:::
 
 ## Reporting
 
-# Advice
-
-* Collaborate with a statistician! 
+:::{.notes}
+:::
 
 ## Practical Options
 
 * Item-level missingness in scale scores [@Graham-RN1615; @Newman-RN8223]
+* Collaborate with a statistician! 
 
+:::{.notes}
+:::
+
+## Software Tools
+
+* SPSS: check out the `MVA` and `MULTIPLE IMPUTATION` syntax commands
+* R packages: see the [CRAN Task View on Missing Data](https://cran.r-project.org/view=MissingData)
+* Mplus: can use either FIML estimation or multiple imputation
 
 ## References {.scrollable}
 
