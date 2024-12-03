@@ -86,8 +86,7 @@ you didn't get all the data you need.
 studies. Entirely avoiding it is difficult and rare.
 
 **>** If you do much evaluation work, you *will* eventually run into some 
-missing data issues. Therefore, it is worth learning about the issue and how to
-handle it.
+missing data. Therefore, it's worth learning about how to handle it.
 :::
 
 # Why do we end up with missing data? 
@@ -110,7 +109,9 @@ data.frame(Human = c("Participant behavior", "Evaluator errors",
 :::
 
 ::: {.notes}
-Like many things in life, data collection doesn't always go according to plan.
+Why do we end up with missing data? Like many things in life, data collection
+doesn't always go according to plan.
+
 **>** Human factors often contribute to the occurrence of missing data. For 
 example, a survey participant may skip a question without recording any
 response, offer an illegible or irrelevant answer, refuse to answer it, or
@@ -167,8 +168,8 @@ warranted throughout the project lifecycle.
 
 ::: {.notes}
 So, I've defined missing data and identified some of the ways we can end up with
-missing data. But why should we care about it? That's a crucial question and 
-I'll answer it. 
+it. But why should we care about missing data? That's the crucial question I'll 
+answer next. 
 :::
 
 ## Ethics for Evaluators
@@ -260,7 +261,7 @@ how many items are used, so fewer observed items leads to lower reliability.
 Further, some items may be more important indicators of a construct than others.
 You may get a biased estimate of the construct due to poorer content coverage if 
 they are missing. Construct validity depends on both reliability and content 
-coverage, so missing data is a threat to validity.
+coverage, so missing data is a threat to construct validity.
 :::
 
 ## Consequences for Internal Validity [@Fernández-García-RN4151; @McKnight-RN1296]
@@ -271,21 +272,21 @@ coverage, so missing data is a threat to validity.
 * Inaccurate model assumptions
 
 ::: {.notes}
-Missing data is a threat to a study's internal validity for several reasons. 
+Missing data is a threat to a study's internal validity for several reasons.
 Selection bias can result from systematic differences between subgroups of
 participants on constructs relevant to the study conclusions. For example, those
 subgroups could be treatment versus control groups, people who complete the
 study versus drop out, or those who have complete data versus incomplete data.
 These differences may manifest with respect to demographic variables,
-covariates, focal predictors, mediators, moderators, or outcomes. Imagine
-evaluating a longitudinal health study where people who start out with worst 
-symptoms drop out before the posttest more often than those with mild symptoms. 
-Dropping out leads to missing data at posttest. If we fail to handle that 
-properly in the analysis, we may draw inaccurate conclusions about the 
-longitudinal trend in outcome scores. Or perhaps the retention rates differ 
-between treatment and control groups in that same study. Selection bias from 
-such differences reduce the sample representativeness and become rival 
-explanations for findings, making them a threat to internal validity. 
+covariates, predictors, mediators, moderators, or outcomes. Imagine evaluating a
+longitudinal health study where people who start out with worst symptoms drop
+out before the posttest more often than those with mild symptoms. Dropping out
+leads to missing data at posttest. If we fail to handle that properly in the
+analysis, we may draw inaccurate conclusions about the longitudinal trend in
+outcome scores. Or perhaps the retention rates differ between treatment and
+control groups in that same study. Selection bias from such differences reduce
+the sample representativeness and become rival explanations for findings, making
+them a threat to internal validity.
 
 We use randomization to make groups equivalent on measured and unmeasured 
 confounding variables as a way to strengthen validity. That works best in large 
@@ -352,8 +353,8 @@ issues it faces will vary across studies. Now the question is "how can we
 diagnose the missing data issues for a given study?" because we can't make good 
 choices about what to do about missing data problems until we thoroughly 
 understand them. It's hard to solve a problem before you've adequately described 
-it. I'm going to cover some concepts that pertain to describing the mechanisms, 
-amounts, and patterns of missing data. 
+it. I'm going to cover some concepts that pertain to describing the amounts, 
+patterns, and mechanisms of missing data. 
 :::
 
 ## Cattell's Data Box [@Cattell-RN8693] {.smaller}
