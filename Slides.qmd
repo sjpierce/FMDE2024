@@ -460,6 +460,14 @@ Report numbers & percentages of:
 * Missing values for each variable & construct
 * Reasons for attrition/dropout and other missing data
 
+:::: {.fragment}
+
+::: {.callout-tip title = "Use a Good Tracking System"}
+Track attendance at data collection events & participants' exit from the study.
+:::
+
+::::
+
 ::: {.notes}
 The dimensions of Cattell's data box suggests some obvious summaries of the 
 amount of missing data. For example, we probably want to examine and report the 
