@@ -622,9 +622,9 @@ observed nor unobserved values predict which values are likely to be missing.
 The missingness is entirely a result of random processes and there's no
 discernible pattern to it. That's why it causes the least bias in statistical
 analyses. However, using listwise deletion will still reduce measurement
-reliability and statistical power and precision. There is at least one formal 
-statistical test for whether MCAR is a plausible mechanism. I don't see if used 
-very often though.
+reliability and statistical power and precision. While there is a formal
+statistical test for whether MCAR is a plausible mechanism, I don't see it used
+very often.
 :::
 
 ## MAR
@@ -659,11 +659,12 @@ MAR is when observed values predict which values are likely to be missing. Thus,
 we can see patterns in what's missing because that's related to data that we
 have available. While there may still be some random influences too, the crucial
 feature of MAR is that the probability of missingess depends on observed data
-but not on the unobserved, missing data itself. MAR is sometimes called
-ignorable nonresponse [@Schafer-RN425], but that ignorability depends on how you
-handle the missing data during analyses. This mechanism is plausible for many 
-datasets. You can usually use simple analyses to demonstrate that MAR is more 
-plausible than MCAR. 
+*but not on the unobserved, missing data itself*. MAR is sometimes called
+ignorable nonresponse [@Schafer-RN425], but that ignorability requires proper
+handling of the missing data during analyses. We have to account for the
+relationships between missingness and observed values to reduce bias. This
+mechanism is plausible for many datasets. You can usually use simple analyses to
+demonstrate that MAR is more plausible than MCAR.
 :::
 
 ## MNAR
@@ -694,13 +695,16 @@ Unobserved -> Random -> Observed [style = "invis"]
 
 :::{.notes}
 MNAR is sometimes called non-ignorable nonresponse [@Schafer-RN425]. That's
-because whether or not a value is missing depends on the unobserved values,
-either on the variable itself, or on other unobserved variables. There are
-hidden patterns to the missingness that we can't easily account for in our
-analyses. That leads to potentially serious biases in our results. One challenge
-is that we can't prove our data is MNAR without actually obtaining the data that
-are missing. However, if we can get that, then we don't need to worry about
-missing data anymore.
+because under this mechanism whether or not a value is missing depends on
+unobserved values, either on the variable itself, or on other unobserved
+variables. There are hidden patterns to the missingness that we can't easily
+account for in our analyses. That leads to potentially serious biases in our
+results. One challenge is that we can't prove our data is MNAR without actually
+obtaining the data that are missing. However, if we can get that, then we
+wouldn't even have missing data anymore. You may be able to make logical
+arguments for why we might expect data to be MNAR in a specific study, but other
+scientists may or may not be persuaded by those arguments when you can't provide
+supporting evidence due to lack of the necessary data.
 :::
 
 ## Predictors of Attrition & Missingness in Longitudinal Studies
