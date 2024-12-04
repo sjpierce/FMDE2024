@@ -1082,7 +1082,8 @@ translated into the SEM framework, which makes FIML reasonably accessible.
 
 * SPSS: check out the `MVA` and `MULTIPLE IMPUTATION` syntax commands
 * R packages: see the [CRAN Task View on Missing Data](https://cran.r-project.org/view=MissingData)
-* Mplus: can use either FIML estimation or multiple imputation
+* Both FIML and MI are supported by Mplus and the R package lavaan 
+
 
 ## References {.scrollable}
 
