@@ -941,20 +941,23 @@ data collection.
 
 ## Treatment: Traditional Methods [@Enders-RN8673; @McKnight-RN1296]
 
+<br>
+
 ``` {r}
 #| label: tbl-outdated
 
 data.frame(Deletion = c("Listwise deletion", "Pairwise deletion", 
                         "Available Items Analysis", 
-                        "Growth Curve Models", " "),
-           Single = c("Mean Substitution", "Regression Imputation", 
-                      "Hot-Deck Imputation", "Averaging Available Items",
+                        " "),
+           Single = c("Mean Substitution", "Hot-Deck Imputation", 
+                      "Regression Imputation", 
                       "Last Observation Carried Forward")) %>% 
   kable(., format = "html", 
-        col.names = c("Data Deletion Methods", 
-                      "Single Imputation Methods")) %>% 
+        col.names = c("Data Deletion", 
+                      "Single Imputation")) %>% 
   kable_classic(full_width = FALSE, lightable_options = c("hover"), 
-                html_font = "Lato")
+                html_font = "Lato") %>% 
+  column_spec(1:2, width = "4.5in")
 ```
 
 :::{.notes}
@@ -965,15 +968,18 @@ been used and discussed in the literature. This table lists examples of two
 types of approaches to the problem: data deletion methods and single imputation 
 methods. 
 
-Listwise deletion means you drop every case that has missing data on any 
-variable in the analysis. That's perhaps the most commonly used method because 
-it is the default behavior for many statistical software packages. *It can only* 
-*give you unbiased parameter estimates if the data are MCAR*, but even then you 
-still lose power and precision due to shrinking sample size. But MCAR is a rare 
-situation. You're far more likley to have MAR, and then using listwise deletion 
-will give you biased results in addition to low power. If there are high rates 
-missingness and many different patterns of missingness, you may not end up with
-enough observations to do meaningful analyses.
+The deletion-based methods are flawed because they inefficiently use the data. 
+Discarding data you've spent resources collecting is wasteful.  
+
+Listwise deletion drops every case that has missing data on any variable in the
+analysis. That's perhaps the most commonly used method because it is the default
+behavior for many statistical software packages. *It can only give you unbiased*
+*parameter estimates if the data are MCAR* and you still lose power due to 
+shrinking sample size. But MCAR is a rare situation. You're far more likley to
+have MAR, and then using listwise deletion will give you biased results in
+addition to low power. If there are high rates missingness and many different
+patterns of missingness, you may not end up with enough observations to do
+meaningful analyses.
 
 Pairwise deletion uses all available data by only eliminating data at the 
 variable level instead of the person level. In a correlation matrix, pairwise 
@@ -982,20 +988,34 @@ correlating. That preserves more power, but is still only unbiased under MCAR
 and it causes other problems. For example, different subsets of cases may be 
 used for each variable. That can lead to problems with standard errors.
 
-The available items method is used when combining multiple items to measure 
-constructs. If you've got a 6 item-scale for depression but only 4 items are 
-complete, you might take the mean of those 4 and use that as the scale score. 
-This makes really strong assumptions about the missing items being 
-interchangeable and about the factor structure. It may decrease variance the 
-variance between items and will often decrease reliability. 
+The available items method is used when combining multiple items to measure
+constructs. If you've got a 6 item-scale for depression but only 4 items are
+complete, you might take the mean of those 4 and use that as the scale score.
+This makes strong assumptions about the interchangeability of items and about
+the factor structure. It may decrease the variance between items and will often
+decrease reliability. 
 
-Individual growth curve models use the available longitudinal observations for 
-each person to estimate longitudinal trajectories in a way that is similar to 
-how available items are used to measure constructs. This can be misleading when 
-the missing values would alter the trajectories, or when the missing data are 
-not correlated with the observed data. Where along the time axis the values are 
-missing may influence how much the missing data affect the 
-trajectory. Dropout removes the 
+Single imputation methods represent various approaches to replacing each missing
+value with a single guess about what value should be there. They fill the holes
+in the original, incomplete dataset to create a complete, imputed dataset. For
+example, one might swap in the overall mean or a group mean for a variable, or
+use the hot deck method to swap in the observed value from an randomly selected
+but otherwise similar case. In longitudinal studies, sometimes people handle
+dropout by carrying the last observed value forward to future time points.
+Meanwhile, regression imputation uses complete variables to predict the values 
+of incomplete variables, then replaces the missing value with the conditional 
+mean of the missing variable given the observed predictors.
+
+Statisticians have identifed limitations and flaws for all single imputation
+methods. While they increase power relative to deletion methods and there are
+some narrowly defined circumstances when they work reasonably, the single
+imputation methods make untenable assumptions, generally produce biased 
+estimates even under MCAR and MAR mechanisms, and underestimate standard errors. 
+
+Fortunately, there are better, more modern methods available that don't suffer 
+the drawbacks of these traditional methods. 
+:::
+
 
 
 :::
