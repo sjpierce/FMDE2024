@@ -1016,17 +1016,54 @@ Fortunately, there are better, more modern methods available that don't suffer
 the drawbacks of these traditional methods. 
 :::
 
-
-
-:::
-
-## Treatment: Modern Methods
+## Treatment: Modern Methods [@Enders-RN8673; @McKnight-RN1296]
 
 * Full-information maximum likelihood (FIML) estimation
-* Multiple imputation
+* Multiple imputation (MI)
 
 :::{.notes}
+I'm going to describe two modern, state-of-the-art methods for analyzing
+incomplete datasets that solve the problems associated with the traditional
+methods: full-information maxmum likelihood estimation (FIML) and multiple
+imputation (MI).
 :::
+
+## Treatment: FIML [@Enders-RN8673; @McKnight-RN1296]
+
+FIML estimates parameters by combining observed data, relationships among 
+observed variables, and assumptions about distributions. 
+
+* Seeks parameter estimates that best fit the data
+* Uses all available data without imputing any values
+* Benefits from auxilliary variables 
+* Works well with MCAR and MAR
+* Yields biased estimates under MNAR
+* Available in structural equation modeling (SEM) software
+
+:::{.notes}
+Let's take a closer look at the FIML method. It estimates parameters by 
+combining observed data, relationships among observed variables, and assumptions 
+about distributions. It seeks the combination of parameter estimates that best 
+fit the overall dataset, which are the ones that make the observed data most 
+likely given the model assumptions. The FIML computations take advantage of all 
+the available data from each case, whether it is comploete or incomplete without 
+imputing any of the missing values. 
+
+FIML benefit from adding auxiliary variables to the model that either predict 
+missingness or are correlated with the incomplete variables. They provide a way 
+to recapture some of the information lost due to missing data. Auxiliary 
+variables are more useful when they're mostly complete and at least modestly 
+correlated with the incomplete variables, say around r =  0.40.
+
+FIML is unbiased and yields accurate standard errors under both MCAR and MAR 
+mechanisms, but of course can't fully solve the missing data problem under MNAR, 
+though it does better than traditional methods. 
+
+If you want to use FIML methods, look in structural equation modeling software. 
+Many familiar models--such as regression, ANOVA, and mixed models--can be 
+translated into the SEM framework, which makes FIML reasonably accessible.
+:::
+
 
 ## Reporting
 
