@@ -33,7 +33,7 @@ the Quarto extension called `reveal-header`
 (https://github.com/shafayetShafee/reveal-header). Installing that
 created the `_extensions/` subfolder here.
 
-## Obtaining the Slides & Example Files
+## Obtaining the Slides
 
 For each of the links below, you will land on a GitHub page that has a
 *Download raw file* button in the upper right corner of the screen. Its
@@ -124,8 +124,7 @@ project](https://support.rstudio.com/hc/en-us/articles/200526207-Using-RStudio-P
 This section is for users who want to do more than just casually examine
 the slides and example files side by side. The best way to learn is to
 actually install all the software and then try rendering some files
-yourself. To render either my presentation slides or my other example
-Quarto scripts from the source code:
+yourself. To render my presentation slides:
 
 - Install the necessary [software for reproducible research with
   R](https://sjpierce.github.io/rr_software.html)

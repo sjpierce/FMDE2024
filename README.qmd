@@ -48,7 +48,7 @@ This presentation uses the Quarto extension called `reveal-header`
 (https://github.com/shafayetShafee/reveal-header). Installing that created the 
 `_extensions/` subfolder here.  
 
-## Obtaining the Slides & Example Files
+## Obtaining the Slides
 For each of the links below, you will land on a GitHub page that has a 
 *Download raw file* button in the upper right corner of the screen. Its icon
 looks like an arrow pointing down into a tray. It is just to the left of the
@@ -132,8 +132,7 @@ The repository is set up as an
 This section is for users who want to do more than just casually examine the 
 slides and example files side by side. The best way to learn is to actually 
 install all the software and then try rendering some files yourself. To render 
-either my presentation slides or my other example Quarto scripts from the source 
-code:
+my presentation slides:
 
 * Install the necessary 
   [software for reproducible research with R](https://sjpierce.github.io/rr_software.html) 
