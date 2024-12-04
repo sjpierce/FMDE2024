@@ -7,11 +7,10 @@ Steven J. Pierce
 
 <!-- badges: start -->
 
-[![Lifecycle:
-experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-[![Project Status: WIP – Initial development is in progress, but there
-has not yet been a stable, usable release suitable for the
-public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+[![](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+[![Project Status: Active – The project has reached a stable, usable
+state and is being actively
+developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 <!-- badges: end -->
 
 This repository holds materials for one of my professional presentations
@@ -42,9 +41,9 @@ icon looks like an arrow pointing down into a tray. It is just to the
 left of the pencil icon. Use that to download each file to your
 computer.
 
-The `*.qmd` files are Quarto scripts, while the corresponding `*.html`
-files are the resulting rendered output. The output should work in
-common web browsers like Chrome, Edge, and Firefox.
+The `*.qmd` file is a Quarto script, while the corresponding `*.html`
+file is the resulting rendered output. The output should work in common
+web browsers like Chrome, Edge, and Firefox.
 
 - [`Slides.qmd`](https://github.com/sjpierce/FMDE2024/blob/main/Slides.qmd)  
 - [`Slides.html`](https://github.com/sjpierce/FMDE2024/blob/main/Slides.html)
@@ -177,8 +176,8 @@ The following exceptions apply:
   (CSTAT) do not fall under the CC BY-NC-SA license. They are
   intellectual property owned by Michigan State University. I use them
   for branding purposes because I am an MSU employee.
-- Similarly, I assume that graphics file for the logos of the American
-  Evaluation Association (AEA)is the intellectual property of that
+- Similarly, I assume that graphics file for the logo of the American
+  Evaluation Association (AEA) is the intellectual property of that
   organization and also does not fall under the CC BY-NC-SA license. My
   use of it in this repository should fall under fair use provisions of
   trademark law.
