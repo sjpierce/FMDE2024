@@ -1064,12 +1064,6 @@ Many familiar models--such as regression, ANOVA, and mixed models--can be
 translated into the SEM framework, which makes FIML reasonably accessible.
 :::
 
-
-## Reporting
-
-:::{.notes}
-:::
-
 ## Practical Options
 
 * Item-level missingness in scale scores [@Graham-RN1615; @Newman-RN8223]
