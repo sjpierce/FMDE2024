@@ -1025,7 +1025,9 @@ the drawbacks of these traditional methods.
 I'm going to describe two modern, state-of-the-art methods for analyzing
 incomplete datasets that solve the problems associated with the traditional
 methods: full-information maxmum likelihood estimation (FIML) and multiple
-imputation (MI).
+imputation (MI). Both these methods can handle variables that are continuous, 
+nominal, ordinal, or counts. Furthermore, FIML and MI methods tend to produce 
+the same results when applied well.  
 :::
 
 ## Treatment: FIML [@Enders-RN8673; @McKnight-RN1296]
@@ -1046,7 +1048,7 @@ combining observed data, relationships among observed variables, and assumptions
 about distributions. It seeks the combination of parameter estimates that best 
 fit the overall dataset, which are the ones that make the observed data most 
 likely given the model assumptions. The FIML computations take advantage of all 
-the available data from each case, whether it is comploete or incomplete without 
+the available data from each case, whether it is complete or incomplete without 
 imputing any of the missing values. 
 
 FIML benefit from adding auxiliary variables to the model that either predict 
