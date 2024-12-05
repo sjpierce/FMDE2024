@@ -1066,6 +1066,46 @@ Many familiar models--such as regression, ANOVA, and mixed models--can be
 translated into the SEM framework, which makes FIML reasonably accessible.
 :::
 
+## Treatment: MI [@Enders-RN8673; @McKnight-RN1296; @van-Buuren-RN3962]
+
+MI replaces each missing value with several independent draws from the 
+variable's conditional distribution, leaving us to pool the results of analyzing 
+*m* complete, imputed datasets. 
+
+* Uses all available data 
+* Requires 2 models: imputation & analysis
+* Pools parameter estimates across analyses of imputed datasets
+* Preserves uncertainty associated with imputation
+* Quantifies influence of missing data on parameter estimation
+* Works well with MCAR and MAR
+* Can handle data that are MNAR 
+
+:::{.notes}
+Multiple imputation replaces each missing value with several independent draws
+from the variable's conditional distribution, leaving us to pool the results of
+analyzing *m* complete, imputed datasets. It uses all the available data along 
+the way. The process requires building two different models. First you create an 
+imputation model that uses relationships between variables to predict the values 
+of incomplete variables given observed values from each case. As in FIML, the 
+imputation model benefits from adding auxiliary variables that either predict 
+missingness or are correlated with the incomplete variables. They facilitate 
+recapturing some of the information lost due to missing data. The imputation 
+model must contain effects that will be in the analysis model to perform well 
+and obtain the conditional distributions used to draw good imputed values. The 
+analysis reflects your hypotheses, using predictors and covariates to predict 
+the outcome variables. It must be run on each imputed dataset. Pooling the 
+parameter estimates across the set of analysis models gives you the final 
+estimates while properly reflecting the uncertainty associated with replacing 
+missing data with imputed values. Pooling also offers a unique advantage of MI 
+over other methods: it quantifies the influence of missing data on parameter 
+estimation. No other method offers that option. 
+
+MI is unbiased and yields accurate standard errors under both MCAR and MAR 
+mechanisms, and it can even handle MNAR data reasonably in some circumstances. 
+
+
+:::
+
 ## Practical Options
 
 * Item-level missingness in scale scores [@Graham-RN1615; @Newman-RN8223]
